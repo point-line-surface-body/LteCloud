@@ -1,0 +1,40 @@
+#!/opt/swe/bin/expect
+#Usage: expect sftp.exp $ServerIP $UserName $PassWord $FileDir $CSL $file
+
+set YS_ServerIP [lindex $argv 0]
+set YS_UserName [lindex $argv 1]
+set YS_PassWord [lindex $argv 2]
+set YS_FileDir  [lindex $argv 3]
+set CSL            [lindex $argv 4]
+set file           [lindex $argv 5]
+
+
+set timeout -1
+
+spawn /usr/bin/sftp $YS_UserName@$YS_ServerIP:$YS_FileDir
+
+expect {
+    "yes/no"    { send "yes\n"
+	    expect "password:" { send "$YS_PassWord\n"}
+    }
+    "password:" { send "$YS_PassWord\n"}
+    timeout     { send_user "TimeOut\n"; send "exit\n" }
+}
+
+if {$CSL != ""} {
+    expect "sftp>"
+    send "mkdir $CSL\n"
+    expect "sftp>"
+    send "cd $CSL\n"
+}
+
+expect "sftp>"
+send "put $file\n"
+
+sleep 2
+expect ">"
+
+send "exit\n"
+send "\n"
+
+
