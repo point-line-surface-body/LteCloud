@@ -2,7 +2,7 @@
 
 JenkinsUrl='http://172.24.186.185'
 Jenkins_User='senya'
-Jenkins_Passwd='asb#1234'
+Jenkins_Passwd='XX'
 
 JobName=$1
 
