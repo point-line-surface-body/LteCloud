@@ -1,0 +1,69 @@
+#!/bin/sh
+#clear
+ViewDir=/net/sbardwf6/vol/cc_stg_2013/Views/${LOGNAME}
+Region=LTE
+
+#senya_substream_SHA      <-   lr_app_8157_1.0_BASE_uplink_SHA
+#senya_substream_BUL      <-   lr_app_8157_1.0_BASE_uplink
+
+#printf "Are you agree this? [y/n]: "
+#read input
+#input="y"
+#if [ "x$input" != "xy" -a "x$input" != "xY" ];then
+#  exit 1
+#fi
+printf "\n"
+
+#if [ $# -ne 1 ]  ; then
+#    printf "please input your 'stream' name: "
+#    while read stream 
+#    do
+#	/usr/atria/bin/cleartool desc stream:${stream}@/enbl_pvob> /dev/null 2>&1
+#      if [ $? = 0 ]; then
+#        break
+#      fi
+#      printf "please input your 'stream' name: "
+#    done
+#else
+#    stream=$1
+#fi
+#printf "\n"
+
+stream_t=`echo ${stream}|cut -d@ -f1`
+
+#printf "Input your view name: "
+#read viewtag
+
+
+
+# Argv1 - stream
+stream=$1
+# Argv2 - view
+randomStr=`date "+%m%d"`"_"`cat /proc/sys/kernel/random/uuid | cut -b-5`
+#viewtag=$2"_"${randomStr}
+viewtag=$2
+
+#viewtag=${LOGNAME}_${stream_t}_{randomStr}
+umask 022
+
+#echo checking user directory in view storage
+if [ ! -d ${ViewDir} ]
+then
+mkdir ${ViewDir}
+fi
+
+echo "creating view $viewtag ......"
+/usr/atria/bin/cleartool mkview -tag $viewtag -stream ${stream}@/enbl_pvob -host sbardwa4 -hpath $ViewDir/${viewtag}.vws -gpath $ViewDir/${viewtag}.vws $ViewDir/${viewtag}.vws
+echo "#################importing the view to windows####################"
+/usr/atria/bin/cleartool mktag -view -region LTE.NT -tag $viewtag -host sbardwa4.cn.alcatel-lucent.com -gpath \\\\sbardwf6.cn.alcatel-lucent.com\\cc_stg_2013\\Views\\${LOGNAME}\\${viewtag}.vws $ViewDir/${viewtag}.vws 2>/dev/null
+
+if [ $? -eq 0 ]
+then
+echo "###################the view has been imported successfully###############"
+echo "###########Your View is : ###############################################"
+echo ""
+echo $viewtag
+echo ""
+echo "#########################################################################"
+fi
+

@@ -1,0 +1,79 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+
+my $CT = "/usr/atria/bin/cleartool";
+
+
+my $ViewTag=$ARGV[0];
+
+&checkView($ViewTag);
+&getViewInfo($ViewTag);
+
+my ($uuid,$viewpath) = &getViewInfo($ViewTag);
+&rmview($ViewTag, $uuid, $viewpath);
+
+
+
+
+
+
+
+
+sub checkView
+{
+    my $_view = shift;
+    my $_check = `$CT lsview $_view`;
+    if($_check =~ /cleartool.*Error.*No matching/)
+    {
+        print "The View=$_view cannot be accessed, not exist!\n";
+        exit;
+    }
+}
+
+sub getViewInfo
+{
+    my $_view = shift;
+    my @_info = `$CT lsview -l $_view`;
+    my $_uuid = "";
+    my $_viewPath = "";
+    
+    #print scalar(@_info),"\n";
+    foreach my $line (@_info)
+    {
+       chomp $line;
+       if( $line =~ /^View uuid:\s+(.*)$/ )
+       {
+          $_uuid = $1;
+       }
+       if( $line =~ /Global path:\s+(.*)$/)
+       {
+          $_viewPath = $1;
+       }
+    }
+    return ($_uuid, $_viewPath);
+}
+
+sub rmview
+{
+    my $_view = shift;
+    my $_uuid = shift;
+    my $_viewpath = shift;
+
+    # Step 1. Remove viewtag
+    print "-"x60,"\nRemoving ViewTag=$_view ... ...\n";
+    my $status = `$CT rmtag -view $_view`;
+    print $status,"\n","-"x60,"\n";
+  
+    # Step 2. Remove UUID
+    print "-"x60,"\nRemoving View's UUID=$_uuid ... ...\n";
+    $status = `$CT rmview -force -all -uuid $_uuid`;
+    print $status,"\n","-"x60,"\n";
+    
+    # Step 3. Remove ViewPath
+    print "-"x60,"\nRemoving View's Path=$_viewpath ... ...\n";
+    $status = `rm -rf $_view $_viewpath`;
+    print $status,"\n","-"x60,"\n";
+
+}
