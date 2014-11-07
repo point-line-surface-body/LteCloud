@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.disk__usage.DiskUsageProperty plugin="disk-usage@0.23"/>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>135.251.157.190</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.BatchFile>
+      <command>
+@echo off
+echo ===========================================================================
+echo Update D:\LteCloud From SVN
+echo ===========================================================================
+"C:\Program Files\TortoiseSVN\bin\TortoiseProc.exe" /command:update /path:"D:\LteCloud\" /closeonend:1
+echo ===========================================================================
+echo "Emails          :"_EMAIL_
+echo "TestCase KeyWord:"_TestCaseName_KeyWord_
+echo "dsp.elf.gz Used :"_Random_DSP_ELF_
+echo "SystemModel Ver :"_SM_
+echo "ATT Version     :"_ATT_Ver_
+echo "MTT Version     :"_MTT_Ver_
+
+echo ===========================================================================
+echo 1.Download dsp.elf.gz
+echo python D:\LteCloud\auto_test_l1sst\pysftp.py _Random_DSP_ELF_ %WORKSPACE% 
+python D:\LteCloud\auto_test_l1sst\pysftp.py _Random_DSP_ELF_ %WORKSPACE%
+
+echo ===========================================================================
+echo 2.Run L1SST
+echo python D:\LteCloud\auto_test_l1sst\l1sst_run_sdcam.py -f %WORKSPACE%\_Random_DSP_ELF_ -d %WORKSPACE% -k _TestCaseName_KeyWord_ -s _SM_ -a _ATT_Ver_ -m _MTT_Ver_
+python D:\LteCloud\auto_test_l1sst\l1sst_run_sdcam.py -f %WORKSPACE%\_Random_DSP_ELF_ -d %WORKSPACE% -k _TestCaseName_KeyWord_ -s _SM_ -a _ATT_Ver_ -m _MTT_Ver_
+
+echo ===========================================================================
+echo 3. Sending Email
+echo python D:/LteCloud/Email/SendEmail_LteCloudRev2_L1SST.py _EMAIL_ %WORKSPACE% %JOB_URL% %BUILD_URL%
+python D:/LteCloud/Email/SendEmail_LteCloudRev2_L1SST.py _EMAIL_ %WORKSPACE% %JOB_URL% %BUILD_URL%
+
+echo  ==  ==  == OVER  ==  ==  == 
+      </command>
+    </hudson.tasks.BatchFile>
+  </builders>
+  <publishers/>
+  <buildWrappers>
+    <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.5.8"/>
+  </buildWrappers>
+</project>

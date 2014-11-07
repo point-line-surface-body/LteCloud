@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.disk__usage.DiskUsageProperty plugin="disk-usage@0.23"/>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>LteCloud</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.BatchFile>
+      <command>
+@echo off
+echo ===========================================================================
+::call Z:/CheckCwFloatingLicenseStatus.bat
+echo ===========================================================================
+
+echo ===========================================================================
+"C:\Program Files\Freescale\CW SC v10.2.5\"SC\StarCore_Support\compiler\bin\sc3000-ld.exe -V
+"C:\Program Files\Freescale\CW SC v10.5.0\"SC\StarCore_Support\compiler\bin\sc3000-ld.exe -V
+"C:\Program Files\Freescale\CW SC v10.6.3\"SC\StarCore_Support\compiler_3900\bin\sc3000-ld.exe -V
+"C:\Program Files\Freescale\CW SC v10.6.4\"SC\StarCore_Support\compiler_3900\bin\sc3000-ld.exe -V
+"C:\Program Files\Freescale\CW SC v10.6.5\"SC\StarCore_Support\compiler_3900\bin\sc3000-ld.exe -V
+"C:\Program Files\Freescale\CW SC v10.8.0\"SC\StarCore_Support\compiler_3900\bin\sc3000-ld.exe -V
+echo ===========================================================================
+
+REM 0. Download Zipfile ... ... 
+mkdir D:/M_Drive
+cd D:/LteCloud/ExecCmd_OnRemoteLinux/
+echo python D:/LteCloud/ExecCmd_OnRemoteLinux/sshExecCmd_LteCloudRev3.py _LinuxView_  _Site_  _RemoteZipFile_ _RandomString_ _CSL_
+python D:/LteCloud/ExecCmd_OnRemoteLinux/sshExecCmd_LteCloudRev3.py _LinuxView_  _Site_  _RemoteZipFile_ _RandomString_ _CSL_
+set CodeExteactedFolder=D:/tmp_cw_SOC/_LinuxView___RandomString_
+set localzipfile=D:\tmp_cw_SOC/_JobName_.zip
+set Email=_EmailList_
+echo 1. Decompress Zipfile
+rd %CodeExteactedFolder% /S /Q
+echo D:/LteCloud/7za.exe x -y %localzipfile% -o%CodeExteactedFolder%
+D:/LteCloud/7za.exe x -y %localzipfile% -o%CodeExteactedFolder%
+del /f /s %localzipfile%
+
+echo ===========================================================================
+echo 2. Config Variable For Tcl to Launch Compiling
+set TARGET=_BuildType_
+set WORKSPACE=D:\Temp\_CSL_
+set LR_DSP_CWIDE_PATH=C:\Program Files\Freescale\CW SC v_CodeWarriorVersion_\eclipse
+"%LR_DSP_CWIDE_PATH%\..\SC\StarCore_Support\compiler_3900/bin/scc.exe" -version
+"%LR_DSP_CWIDE_PATH%\..\SC\StarCore_Support\compiler_3900/bin/fsscc.exe" -version 
+"%LR_DSP_CWIDE_PATH%\..\SC\StarCore_Support\compiler_3900/bin/sc3000-ld.exe" -V 
+set PROJECT_PATH=%CodeExteactedFolder%/enodeb_modem/dspapp/LTE_LR_SoC
+echo ===========================================================================
+echo 3. Begin To Compile
+echo "%LR_DSP_CWIDE_PATH%\ecd.exe" -build -verbose -cleanAll -project %PROJECT_PATH%\.project -config "%TARGET%" -cleanBuild
+"%LR_DSP_CWIDE_PATH%\ecd.exe" -build -verbose -cleanAll -project %PROJECT_PATH%\.project -config "%TARGET%" -cleanBuild
+echo ===========================================================================
+echo == ==  == SendEmail ==  ==  ==  == 
+cd D:/LteCloud/Email
+::"python %s %s %s %s %s %s %s %s %s\n" % (SendEmail, csl, email, SDCxmBld, JobName, Type, localzipfile,  ViewName, l1sst_flag)
+echo python D:/LteCloud/Email/SendEmail_LteCloudRev2.py _CSL_ _EmailList_ _RandomString_ _JobName_ _BuildType_ %localzipfile% _LinuxView_ 'l1sst_none'
+python D:/LteCloud/Email/SendEmail_LteCloudRev2.py _CSL_ _EmailList_ _RandomString_ _JobName_ _BuildType_ %localzipfile% _LinuxView_ 'l1sst_none'
+
+REM echo == ==  == BackUp ==  ==  ==  ==
+::python Z:/ExecCmd_OnRemoteLinux/uploadload_zipfile.py _CSL_ %localzipfile%
+::del /f /s %localzipfile%
+
+echo  ==  ==  == OVER  ==  ==  == 
+      </command>
+    </hudson.tasks.BatchFile>
+  </builders>
+  <publishers/>
+  <buildWrappers>
+    <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.5.8"/>
+  </buildWrappers>
+</project>

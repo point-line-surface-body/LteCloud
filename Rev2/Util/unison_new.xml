@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+    <description></description>
+      <keepDependencies>false</keepDependencies>
+        <properties>
+            <hudson.plugins.disk__usage.DiskUsageProperty plugin="disk-usage@0.23"/>
+        </properties>
+      <scm class="hudson.scm.NullSCM"/>
+      <assignedNode>135.251.224.95_DL380 || 135.251.224.96_DL380 || 135.251.224.97_DL380 || LteCloud_unison</assignedNode>
+      <canRoam>false</canRoam>
+      <disabled>false</disabled>
+      <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+      <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+      <concurrentBuild>false</concurrentBuild>
+      <builders>
+        <hudson.tasks.BatchFile>
+          <command>
+echo JENKINS_URL=%JENKINS_URL%
+echo JOB_URL=%JOB_URL%
+echo BUILD_URL=%BUILD_URL%
+echo WORKSPACE=%WORKSPACE%
+echo JENKINS_HOME=%JENKINS_HOME%
+
+echo ===========================================================================
+"C:\Program Files\Freescale\CW SC v10.2.5\"SC\StarCore_Support\compiler\bin\sc3000-ld.exe -V
+"C:\Program Files\Freescale\CW SC v10.5.0\"SC\StarCore_Support\compiler\bin\sc3000-ld.exe -V
+"C:\Program Files\Freescale\CW SC v10.6.3\"SC\StarCore_Support\compiler_3900\bin\sc3000-ld.exe -V
+"C:\Program Files\Freescale\CW SC v10.6.4\"SC\StarCore_Support\compiler_3900\bin\sc3000-ld.exe -V
+"C:\Program Files\Freescale\CW SC v10.6.5\"SC\StarCore_Support\compiler_3900\bin\sc3000-ld.exe -V
+"C:\Program Files\Freescale\CW SC v10.8.0\"SC\StarCore_Support\compiler_3900\bin\sc3000-ld.exe -V
+echo ===========================================================================
+
+echo ===========================================================================
+echo Update D:\LteCloud From SVN
+echo ===========================================================================
+"C:\Program Files\TortoiseSVN\bin\TortoiseProc.exe" /command:update /path:D:\LteCloud\ /closeonend:1
+echo ===========================================================================
+
+python D:\LteCloud\ExecCmd_OnRemoteLinux\LteCloud_UNISON.py --site=_SITE_ --view=_VIEWNAME_ --project=_PROJECT_ --jenkinsjoburl=%BUILD_URL% --jenkinsworkspace=%WORKSPACE% --to_csls=_CSLS_ --mails=_MAILS_ --randomstring=_RANDOMSTRING_ --configfile=D:\LteCloud\ExecCmd_OnRemoteLinux\config.ini  --warriorversion=_CodeWarriorVersion_  --target=_TARGET_ --numofretrysync=8
+    
+          </command>
+        </hudson.tasks.BatchFile>
+      </builders>
+      <publishers>
+      <hudson.tasks.Mailer plugin="mailer@1.5">
+      <recipients>Sen.B.Yang@alcatel-sbell.com.cn</recipients>
+      <dontNotifyEveryUnstableBuild>true</dontNotifyEveryUnstableBuild>
+      <sendToIndividuals>true</sendToIndividuals>
+      </hudson.tasks.Mailer>
+      </publishers>
+      <buildWrappers>
+         <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.5.8"/>
+      </buildWrappers>
+</project>

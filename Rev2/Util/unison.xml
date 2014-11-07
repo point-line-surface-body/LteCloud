@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>site</name>
+          <description></description>
+          <defaultValue>_SITE_</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>view</name>
+          <description></description>
+          <defaultValue>_VIEWNAME_</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>project</name>
+          <description></description>
+          <defaultValue>_PROJECT_</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>to_csls</name>
+          <description>
+          </description>
+          <defaultValue>_CSLS_</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>mails</name>
+          <description></description>
+          <defaultValue>_MAILS_</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>randomstring</name>
+          <description></description>
+          <defaultValue>_RANDOMSTRING_</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>configfile</name>
+          <description></description>
+          <defaultValue>D:\LteCloud\ExecCmd_OnRemoteLinux\config.ini </defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>warriorversion</name>
+          <description></description>
+          <defaultValue>_CodeWarriorVersion_</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>target</name>
+          <description></description>
+          <defaultValue>_TARGET_</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>numofretrysync</name>
+          <description></description>
+          <defaultValue>8</defaultValue>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+    <hudson.plugins.disk__usage.DiskUsageProperty plugin="disk-usage@0.23"/>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>135.251.157.145 ||135.251.157.146 || 135.251.157.149 || 135.251.157.77 || 135.251.224.96_DL380 || 135.251.224.97_DL380</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.BatchFile>
+      <command>
+echo JENKINS_URL=%JENKINS_URL%
+echo JOB_URL=%JOB_URL%
+echo BUILD_URL=%BUILD_URL%
+echo WORKSPACE=%WORKSPACE%
+echo JENKINS_HOME=%JENKINS_HOME%
+
+echo ===========================================================================
+echo Update D:\LteCloud From SVN
+echo ===========================================================================
+&quot;C:\Program Files\TortoiseSVN\bin\TortoiseProc.exe&quot; /command:update /path:&quot;D:\LteCloud\&quot; /closeonend:1
+echo ===========================================================================
+
+python D:\LteCloud\ExecCmd_OnRemoteLinux\LteCloud_UNISON.py --site=%site% --view=%view% --project=%project% --jenkinsjoburl=%JOB_URL% --to_csls=%to_csls% --mails=%mails% --randomstring=%randomstring%_%BUILD_NUMBER% --configfile=%configfile%  --warriorversion=%warriorversion%  --target=%target% --numofretrysync=%numofretrysync%</command>
+
+    </hudson.tasks.BatchFile>
+  </builders>
+  <publishers>
+    <hudson.tasks.Mailer plugin="mailer@1.5">
+      <recipients>_MAILS_</recipients>
+      <dontNotifyEveryUnstableBuild>true</dontNotifyEveryUnstableBuild>
+      <sendToIndividuals>true</sendToIndividuals>
+    </hudson.tasks.Mailer>
+  </publishers>
+  <buildWrappers>
+    <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.5.8"/>
+  </buildWrappers>
+</project>

@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.disk__usage.DiskUsageProperty plugin="disk-usage@0.23"/>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>135.251.224.95_DL380 || 135.251.224.96_DL380 || 135.251.224.97_DL380</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.BatchFile>
+      <command>
+::@echo off
+echo ===========================================================================
+::call Z:/CheckCwFloatingLicenseStatus.bat
+echo ===========================================================================
+"C:\Program Files\Freescale\CW SC v10.2.5\"SC\StarCore_Support\compiler\bin\sc3000-ld.exe -V
+"C:\Program Files\Freescale\CW SC v10.5.0\"SC\StarCore_Support\compiler\bin\sc3000-ld.exe -V
+"C:\Program Files\Freescale\CW SC v10.6.3\"SC\StarCore_Support\compiler_3900\bin\sc3000-ld.exe -V
+"C:\Program Files\Freescale\CW SC v10.6.4\"SC\StarCore_Support\compiler_3900\bin\sc3000-ld.exe -V
+"C:\Program Files\Freescale\CW SC v10.6.5\"SC\StarCore_Support\compiler_3900\bin\sc3000-ld.exe -V
+"C:\Program Files\Freescale\CW SC v10.8.0\"SC\StarCore_Support\compiler_3900\bin\sc3000-ld.exe -V
+echo ===========================================================================
+
+REM 0. Download Zipfile ... ... 
+mkdir D:\M_Drive
+cd Z:/ExecCmd_OnRemoteLinux/
+echo python Z:/ExecCmd_OnRemoteLinux/sshExecCmd_LteCloudRev3_bCEMFDD.py _LinuxView_  _Site_  _RemoteZipFile_ _RandomString_ _CSL_
+python Z:/ExecCmd_OnRemoteLinux/sshExecCmd_LteCloudRev3_bCEMFDD.py _LinuxView_  _Site_  _RemoteZipFile_ _RandomString_ _CSL_
+set CodeExteactedFolder=D:\tmp_cw\_LinuxView___RandomString_
+set localzipfile=D:/tmp_cw/_JobName_.zip
+set Email=_EmailList_
+echo 1. Decompress Zipfile
+rd %CodeExteactedFolder% /S /Q
+echo D:/LteCloud/7za.exe x -y %localzipfile% -o%CodeExteactedFolder%
+D:/LteCloud/7za.exe x -y %localzipfile% -o%CodeExteactedFolder%
+del  %localzipfile%
+
+::Copy tools to d:\tmp_cw
+echo move %CodeExteactedFolder%\enodeb_modem\dspfbin\tools D:\tmp_cw
+if exist D:\tmp_cw\tools (
+    dir D:\tmp_cw\tools
+) else (
+    mkdir D:\tmp_cw\tools
+    xcopy /y /e Z:\dspfbin\tools\*  D:\tmp_cw\tools
+)
+::Copy local dspsmartdsp to extractfolder
+dir D:\tmp_cw\dspsmartdsp\
+mkdir %CodeExteactedFolder%\enodeb_modem\dspsmartdsp
+if exist D:\tmp_cw\dspsmartdsp (
+    xcopy /y /e D:\tmp_cw\dspsmartdsp\* %CodeExteactedFolder%\enodeb_modem\dspsmartdsp
+) else (
+    mkdir D:\tmp_cw\dspsmartdsp
+    xcopy /y /e Z:\dspsmartdsp\* D:\tmp_cw\dspsmartdsp
+    xcopy /y /e D:\tmp_cw\dspsmartdsp\* %CodeExteactedFolder%\enodeb_modem\dspsmartdsp
+)
+echo ===========================================================================
+echo 2. Config Variable For Tcl to Launch Compiling
+set TARGET=_BuildType_
+set WORKSPACE=D:\Temp\_CSL_
+set LR_DSP_CWIDE_PATH=C:\Program Files\Freescale\CW SC v_CodeWarriorVersion_\eclipse
+"%LR_DSP_CWIDE_PATH%\..\SC\StarCore_Support\compiler_3900/bin/scc.exe" -version
+"%LR_DSP_CWIDE_PATH%\..\SC\StarCore_Support\compiler_3900/bin/fsscc.exe" -version 
+"%LR_DSP_CWIDE_PATH%\..\SC\StarCore_Support\compiler_3900/bin/sc3000-ld.exe" -V 
+
+set PROJECT_PATH=%CodeExteactedFolder%\enodeb_modem\dspprj
+set OutPut=D:\tmp_cw\_RandomString_\build-bCem-bCEM_release
+
+echo ===========================================================================
+echo 3. Begin To Compile
+echo "%LR_DSP_CWIDE_PATH%\ecd.exe" -build -verbose -cleanAll -project %PROJECT_PATH%\.project -config "%TARGET%" -cleanBuild
+"%LR_DSP_CWIDE_PATH%\ecd.exe" -build -verbose -cleanAll -project %PROJECT_PATH%\.project -config "%TARGET%" -cleanBuild
+echo ===========================================================================
+
+d:
+cd %OutPut%
+call D:\tmp_cw\tools\bCem_rel.bat
+
+
+::echo == ==  == SendEmail ==  ==  ==  == 
+::cd Z:/Email
+echo python Z:/Email/SendEmail_LteCloudRev2_bCEMFDD.py _CSL_ _EmailList_ _RandomString_ _JobName_ _BuildType_  _LinuxView_
+python Z:/Email/SendEmail_LteCloudRev2_bCEMFDD.py _CSL_ _EmailList_ _RandomString_ _JobName_ _BuildType_  _LinuxView_
+
+::REM echo == ==  == BackUp ==  ==  ==  ==
+::python Z:/ExecCmd_OnRemoteLinux/uploadload_zipfile.py _CSL_ %localzipfile%
+::del /f /s %localzipfile%
+
+echo  ==  ==  == OVER  ==  ==  == 
+      </command>
+    </hudson.tasks.BatchFile>
+  </builders>
+  <publishers/>
+  <buildWrappers>
+    <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.5.8"/>
+  </buildWrappers>
+</project>
