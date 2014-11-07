@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# The name of the machine.
+#
+echo "Machine Name         : $(/bin/hostname)"
+
+# The OS release.
+#
+echo "OS Release           : $(/bin/cat /etc/redhat-release)"
+
+# The CPU model.
+#
+cpuinfo="$(/bin/egrep -i "^processor|^model name|^cpu MHz|^cpu cores|^cache size" /proc/cpuinfo | /bin/sort -u)"
+echo "CPU Model            :$(echo "${cpuinfo}" | /bin/grep "^model name" | /bin/cut -f2 -d ":")"
+
+# Get the number of total number of processors and the total number of cores.
+# Divide the total by the cores to get the number CPU chips.
+#
+typeset -i CPUcores="$(echo "${cpuinfo}" | /bin/grep "^cpu cores" | /bin/cut -f2 -d ":")"
+typeset -i CPUtotal="$(echo "${cpuinfo}" | /bin/grep "^processor" | /usr/bin/wc -l)"
+typeset -i CPUchips=CPUtotal/CPUcores
+echo "Number of CPUs       : ${CPUchips}"
+echo "Cores/CPU            : ${CPUcores}"
+echo "CPU Total            : ${CPUtotal}"
+
+# The processor speed.
+#
+echo "CPU MHz              :$(echo "${cpuinfo}" | /bin/grep "^cpu MHz" | /bin/cut -f2 -d ":")"
+
+# The processor cache.
+#
+echo "CPU Cache            :$(echo "${cpuinfo}" | /bin/grep "^cache size" | /bin/cut -f2 -d ":")"
+
+# System memory.
+#
+echo "Memory               :$(/bin/grep "^MemTotal:" /proc/meminfo | /bin/cut -f 2 -d ":" | /bin/cut -c 6-)"
+
+# How much filesystem space.
+#
+echo "Space under /localdisk/:\n$(/bin/df -h /local)\n"
