@@ -1,0 +1,1246 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+
+<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249" moduleId="org.eclipse.cdt.core.settings" name="B4860_Macro_QDS_Rev1">
+				<macros>
+					<stringMacro name="BUILD_VAR_NR_OF_CORES" type="VALUE_TEXT" value="6"/>
+					<stringMacro name="SDCxmBld" type="VALUE_PATH_DIR" value="D:\tmp_cw_SOC"/>
+				</macros>
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.managedbuilder.core.ManagedBuildManager" point="org.eclipse.cdt.core.ScannerInfoProvider"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.LltErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.AsmErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.IcodeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.CobjErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.starcore3900.cdt.errorParsers.SccErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.LnkErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.MwfeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.FssccErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="eld" artifactName="LR_SOC" buildProperties="" buildReferences="false" buildReferencingConfigurations="false" cleanCommand="&quot;${system:ECLIPSE_HOME}/../gnu/bin/rm&quot; -f" description="Macro configuration for QDS boards" errorParsers="com.freescale.core.ide.cdt.errorParsers.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser;com.freescale.core.ide.cdt.errorParsers.MwfeErrorParser;com.freescale.starcore3900.cdt.errorParsers.SccErrorParser;com.freescale.core.ide.cdt.errorParsers.LnkErrorParser;com.freescale.core.ide.cdt.errorParsers.AsmErrorParser;com.freescale.core.ide.cdt.errorParsers.CobjErrorParser;com.freescale.core.ide.cdt.errorParsers.IcodeErrorParser;com.freescale.core.ide.cdt.errorParsers.LltErrorParser;com.freescale.core.ide.cdt.errorParsers.FssccErrorParser;org.eclipse.cdt.core.GmakeErrorParser" id="com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249" isPrebuildInvalidatingBuild="false" name="B4860_Macro_QDS_Rev1" parent="com.freescale.starcore3900.cdt.toolchain.config.debug" postannouncebuildStep="" postbuildStep="" preannouncebuildStep="" prebuildStep="" produceBuildErrorsWithMissingReferences="true">
+					<folderInfo id="com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249." name="/" resourcePath="">
+						<toolChain errorParsers="" id="com.freescale.starcore3900.cdt.toolchain.project.c.debug.98006285" name="StarCore 3900 Toolchain" superClass="com.freescale.starcore3900.cdt.toolchain.project.c.debug">
+							<option id="com.freescale.starcore3900.cdt.toolchain.global.architecture.933368046" name="Architecture" superClass="com.freescale.starcore3900.cdt.toolchain.global.architecture" value="com.freescale.starcore3900.cdt.toolchain.global.arch.b4860rev1" valueType="enumerated"/>
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.freescale.starcore3900.cdt.toolchain.root.targetplatform.620822086" isAbstract="false" name="StarCore Target Platform" superClass="com.freescale.starcore3900.cdt.toolchain.root.targetplatform"/>
+							<builder buildPath="${SDCxmBld}/${ConfigName}" errorParsers="" id="com.freescale.starcore3900.cdt.toolchain.root.builder.409140432" keepEnvironmentInBuildfile="false" name="GNU Make Builder" parallelBuildOn="true" parallelBuildWorkspaceOn="true" parallelizationNumber="-1" superClass="com.freescale.starcore3900.cdt.toolchain.root.builder"/>
+							<tool command="disasmsc100" commandLinePattern="&quot;${SCToolsInstallDir3900}${COMMAND}&quot; ${FLAGS} ${INPUTS}" errorParsers="" id="com.freescale.starcore3900.cdt.toolchain.root.scDisassembler.1172517282" name="StarCore 3900 Disassembler" superClass="com.freescale.starcore3900.cdt.toolchain.root.scDisassembler"/>
+							<tool command="scc" commandLinePattern="&quot;${SCToolsInstallDir3900}${COMMAND}&quot; ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT}" errorParsers="com.freescale.starcore3900.cdt.errorParsers.SccErrorParser" id="com.freescale.starcore3900.cdt.toolchain.base.scLinker.1077848233" name="StarCore 3900 C/C++ Linker Application" superClass="com.freescale.starcore3900.cdt.toolchain.base.scLinker">
+								<option id="com.freescale.starcore3900.cdt.toolchain.scLinker.commandFile.203604312" name="Linker Command File" superClass="com.freescale.starcore3900.cdt.toolchain.scLinker.commandFile" value="${ParentPrj}/arch_SoC/B4860/build/os_b4860_link.l3k" valueType="string"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scLinker.extraArgs.1724367059" name="Additional Options" superClass="com.freescale.starcore3900.cdt.toolchain.scLinker.extraArgs" value="-Xlnk &quot;-D_ENABLE_CACHE=-1 -display-info1-in-map -enable-error-placing-section-on-first-fit-basis -o2-place -disable-allow-multiple-definition&quot;" valueType="string"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scLinker.mapFile.1515401845" name="Map File" superClass="com.freescale.starcore3900.cdt.toolchain.scLinker.mapFile" value="${SDCxmBld}/${ConfigName}/build-${ProjName}-${ConfigName}/LR_SOC_Macro.map" valueType="string"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scLinker.libraries.additionalLibs.369644969" name="Additional Libraries" superClass="com.freescale.starcore3900.cdt.toolchain.scLinker.libraries.additionalLibs" valueType="libs">
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/lib/b4860_family/os_b4860_rev1.elb&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/lib/b4860_family/os_b4860_drivers_rev1.elb&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/lib/maple/b4860_maple3lw_api_lib_rev1.elb&quot;"/>
+								</option>
+								<inputType id="com.freescale.starcore3900.cdt.toolchain.scLinker.input.650711571" name="StarCore Linker Input" superClass="com.freescale.starcore3900.cdt.toolchain.scLinker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionaldependency" paths="$(LCF_SRCS)"/>
+									<additionalInput kind="additionaldependency" paths="$(ELB_SRCS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool command="scc" commandLinePattern="&quot;${SCToolsInstallDir3900}${COMMAND}&quot; ${FLAGS} -o ${OUTPUT_PREFIX}${OUTPUT} -c ${INPUTS}" errorParsers="" id="com.freescale.starcore3900.cdt.toolchain.c.debug.scc.2121070915" name="StarCore 3900 C/C++ Compiler" superClass="com.freescale.starcore3900.cdt.toolchain.c.debug.scc">
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.additionalOptions.configView.1411311711" name="Configuration View" superClass="com.freescale.starcore3900.cdt.toolchain.scc.additionalOptions.configView" value="B4860" valueType="string"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.additionalOptions.appConfigFile.380250800" name="Application Configuration File" superClass="com.freescale.starcore3900.cdt.toolchain.scc.additionalOptions.appConfigFile" value="${ParentPrj}/arch_SoC/B4860/build/B4860.appli" valueType="string"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.preprocessor.includePaths.1198481368" name="Include File Search Paths" superClass="com.freescale.starcore3900.cdt.toolchain.scc.preprocessor.includePaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/core_family/sc39xx&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/b4860/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/maple/rev3/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/timers/rev1/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/cpri&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/b4860_family&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/b4860_family/heterogeneous&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/maple/rev3&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/source/arch/starcore/core_family/sc39XX/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/timers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/cpri&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/i2c&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/srio&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/vsg&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/ocn_dma&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/common/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/maple&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/maple/maple_api/b4860/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/cpri/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/cpri/include/arch&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/b4860_family&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/b4860_family/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/core_family/sc39xx/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/maple/rev3/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/ocn_dma/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/vsg/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/timers/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/timers/include/arch&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/source/common/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/fwk/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/B4860/fw_adp/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/CM/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/SwViterbiDecoder/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/Maple/B4860&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PUSCH_AL/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/cif/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/com/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/maple_eftpe/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dia/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/erm/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/exe/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/BitScrambling/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/ConvEncoding/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/CRCgeneration/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/ModMapping/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/RateMatching/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/Utilities/B4860&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPKernel/Beamforming/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPKernel/DL_LayerMapping_Precoding/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPKernel/DLCCHmapping/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/BCH/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/CFICH/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/DLCCH_PROC/include_lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/DLCCH_PROC/api&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PDCCH/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PDSCH_AL/include_lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PDSCH_AL/api&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PHICH/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PRS_CRS/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PSS_SSS/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PUSCH_AL/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/MatrixInversionCholesky/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/MatrixInversionCholesky/src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/dl_itf&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/pdc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/pbc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/pds&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/itf/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/hif/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/maple/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/mea/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/algo&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/driver/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/puc/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/puc/tst&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pus/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pus/test/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/sim/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/tvpe/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/tvpe/test&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/../dspmacrotest/cluster_c_mt/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/cyc/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/../dspmacrotest/cluster_c_test/call_fkt&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/../dspmacrotest/cluster_c_test/call_fkt_3900&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/../dspmacrotest/cluster_c_test/framework&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/../dspmacrotest/cluster_b_mt/code/ut/inc&quot;"/>
+								</option>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.preprocessor.definedMacros.397084094" name="Defined Preprocessor Macros" superClass="com.freescale.starcore3900.cdt.toolchain.scc.preprocessor.definedMacros" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="NR_OF_CORES=${BUILD_VAR_NR_OF_CORES}"/>
+									<listOptionValue builtIn="false" value="OS_B4_REV1"/>
+									<listOptionValue builtIn="false" value="CORE_PAD"/>
+									<listOptionValue builtIn="false" value="HARDWARE_REV1"/>
+									<listOptionValue builtIn="false" value="ALLOW_O0_OPTIMIZATION_IN_SOME_FILES"/>
+									<listOptionValue builtIn="false" value="USE_DSP_FWK_ASSERT"/>
+									<listOptionValue builtIn="false" value="SYS_TRACE_LEVEL_3"/>
+									<listOptionValue builtIn="false" value="DEBUG_ASSERT_ON"/>
+									<listOptionValue builtIn="false" value="ADS"/>
+									<listOptionValue builtIn="false" value="ONLY_DSPC"/>
+									<listOptionValue builtIn="false" value="WAIT_FOR_SIM"/>
+									<listOptionValue builtIn="false" value="WAIT_FOR_CRCPE"/>
+									<listOptionValue builtIn="false" value="WAIT_FOR_HIF"/>
+									<listOptionValue builtIn="false" value="WAIT_FOR_CIF"/>
+									<listOptionValue builtIn="false" value="WAIT_FOR_DIA"/>
+									<listOptionValue builtIn="false" value="OS_MULTICORE=1"/>
+									<listOptionValue builtIn="false" value="SIMULATION"/>
+									<listOptionValue builtIn="false" value="_SC3900FP_COMP_"/>
+									<listOptionValue builtIn="false" value="BIG_ENDIAN_HOST"/>
+									<listOptionValue builtIn="false" value="DSP_BUILD"/>
+									<listOptionValue builtIn="false" value="SC39XX"/>
+									<listOptionValue builtIn="false" value="MMU_SUPPORT=1"/>
+									<listOptionValue builtIn="false" value="B4860"/>
+									<listOptionValue builtIn="false" value="B4860_REV1=1"/>
+									<listOptionValue builtIn="false" value="UCODE_A16"/>
+									<listOptionValue builtIn="false" value="CPRI_ON_CORE4"/>
+									<listOptionValue builtIn="false" value="ACTIVE_CPRI_STUB"/>
+									<listOptionValue builtIn="false" value="EXE_LOG_CPRI_FFT"/>
+									<listOptionValue builtIn="false" value="FULL_DLMIMO"/>
+									<listOptionValue builtIn="false" value="MACRO"/>
+									<listOptionValue builtIn="false" value="_MANAGER_ASSERT_"/>
+									<listOptionValue builtIn="false" value="ALU_AL_CONFIG_MACRO"/>
+									<listOptionValue builtIn="false" value="memcpy=memcpy8_asm"/>
+									<listOptionValue builtIn="false" value="memset=memset8_fast_asm"/>
+									<listOptionValue builtIn="false" value="NOT_PUSCH_MT"/>
+									<listOptionValue builtIn="false" value="NOT_PUSCH_UT"/>
+									<listOptionValue builtIn="false" value="NOT_PUSCH_EDF_MT"/>
+									<listOptionValue builtIn="false" value="NOT_DL_AUTO_MT"/>
+									<listOptionValue builtIn="false" value="NOT_MEASURE_CYCLE"/>
+									<listOptionValue builtIn="false" value="PDSCH_EDF_IFFT_DIS"/>
+								</option>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.additionalOptions.shell.1425794045" name="To Shell" superClass="com.freescale.starcore3900.cdt.toolchain.scc.additionalOptions.shell" value="--keep -Xllt -c_mem0 -Xcfe -w=noextended -Xcfe -fl=no-fsalias_bytype" valueType="string"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.c.debug.scc.generateDebugInfo.1852609655" name="Generate Debugging Information" superClass="com.freescale.starcore3900.cdt.toolchain.c.debug.scc.generateDebugInfo" value="true" valueType="boolean"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.optimization.level.568411952" name="Optimization Level" superClass="com.freescale.starcore3900.cdt.toolchain.scc.optimization.level" value="com.freescale.starcore3900.cdt.toolchain.scc.optimization.level.level3" valueType="enumerated"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.compiler.asmFile.1552069661" name="Keep assembly (.sl) files" superClass="com.freescale.starcore3900.cdt.toolchain.scc.compiler.asmFile" value="false" valueType="boolean"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.compiler.keepErrorFile.888275417" name="Create File with Error Output" superClass="com.freescale.starcore3900.cdt.toolchain.scc.compiler.keepErrorFile" value="false" valueType="boolean"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.compiler.mwfeWarningToError.2109270342" name="Treat Warnings As Errors" superClass="com.freescale.starcore3900.cdt.toolchain.scc.compiler.mwfeWarningToError" value="com.freescale.starcore3900.cdt.toolchain.scc.compiler.mwfeWarningToErrorOn" valueType="enumerated"/>
+								<inputType id="com.freescale.starcore3900.cdt.toolchain.scc.cSource.1832018245" name="Starcore C Source File" superClass="com.freescale.starcore3900.cdt.toolchain.scc.cSource"/>
+								<inputType id="com.freescale.starcore3900.cdt.toolchain.scc.cxxSource.1908972427" name="Starcore C++ Source File" superClass="com.freescale.starcore3900.cdt.toolchain.scc.cxxSource"/>
+								<inputType id="com.freescale.starcore3900.cdt.toolchain.scc.s1Source.1139785050" name="Starcore s1 Source File" superClass="com.freescale.starcore3900.cdt.toolchain.scc.s1Source"/>
+							</tool>
+							<tool command="scasm" commandLinePattern="&quot;${SCToolsInstallDir3900}${COMMAND}&quot; ${FLAGS} ${OUTPUT_FLAG}${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="" id="com.freescale.starcore3900.cdt.toolchain.base.scAsm.2060066804" name="StarCore 3900 Assembler" superClass="com.freescale.starcore3900.cdt.toolchain.base.scAsm">
+								<option id="com.freescale.starcore3900.cdt.toolchain.scAsm.generateDebugInfo.1100152929" name="Generate Debugging Information" superClass="com.freescale.starcore3900.cdt.toolchain.scAsm.generateDebugInfo" value="true" valueType="boolean"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scAsm.asmDefinedSyms.563641069" name="Defined Symbols" superClass="com.freescale.starcore3900.cdt.toolchain.scAsm.asmDefinedSyms"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scAsm.includePaths.1049299652" name="Include File Search Paths" superClass="com.freescale.starcore3900.cdt.toolchain.scAsm.includePaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/b4860/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/maple/rev3/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/cpri&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/b4860_family&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/core_family/sc39xx&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/maple/rev3&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/timers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/cpri&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/vsg&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/i2c&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/srio&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/common/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/maple&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/maple/maple_api/b4860/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/cpri/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/cpri/include/arch&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/b4860_family&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/b4860_family/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/core_family/sc39xx/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/maple/rev3/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/vsg/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/source/common/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/fwk/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/B4860/fw_adp/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/cif/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/com/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/maple_eftpe/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dia/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/erm/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/exe/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/CM/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/BitScrambling/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/ConvEncoding/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/CRCgeneration/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/ModMapping/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/RateMatching/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/Utilities/B4860&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/dl_itf&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/pdc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/pbc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/itf/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/hif/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/maple/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/mea/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/algo&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/driver/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/puc/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pus/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/puc/tst&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/sim/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/tvpe/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/tvpe/test&quot;"/>
+								</option>
+								<inputType id="com.freescale.starcore3900.cdt.toolchain.scAsm.source.503299121" name="StarCore Assembly Source File" superClass="com.freescale.starcore3900.cdt.toolchain.scAsm.source"/>
+							</tool>
+							<tool command="scc" commandLinePattern="&quot;${SCToolsInstallDir3900}${COMMAND}&quot; ${FLAGS} -c ${INPUTS}" errorParsers="" id="com.freescale.starcore3900.cdt.toolchain.base.scPreprocessor.1148439102" name="StarCore 3900 Preprocessor" superClass="com.freescale.starcore3900.cdt.toolchain.base.scPreprocessor"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="code/dspfwk/src/debug_trace|code/dspapp/pus/src/pusch_cfo_compensation_asm.c|code/FSL_Lib/L1/SP/SPManager/PUSCH_AL/src/b486x_shared_mem.c|code/FSL_Lib/L1/SP/SPManager/PUSCH_AL/src/b486x_init.c|code/FSL_Lib/L1/SP/SPManager/PUSCH_AL/src/b486x_config.c|code/dspapp/dl/src/data_task/pds/pds_task_main.c|code/dspapp/dl/src/data_task/pds/pds_task_init.c|code/dspapp/dl/src/data_task/pds/pds_cell_init.c|code/dspapp/maple/src/maple_init_C3.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPM_RBP.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPM_RBP_LUT.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_Repetition.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_PRBmapping.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_PRBmapping_LUTs.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_Modulation.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_Modulation_LUT.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_Modulation_LUT_15bit.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_DLRSgen.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_BitScrambling.c|code/dspapp/dl/src/data_task/common/SBL1_DL_PDP_Init.c|code/dspapp/dl/src/data_task/common/PDP_Emulation.c|code/dspapp/dl/src/data_task/common/PDP_driver.c|code/dspapp/dl/src/data_task/common/ftpe_driver.c|code/dspapp/dl/src/data_task/common/dl_tm_test_samples.c|code/dspapp/dl/src/data_task/common/depe_driver.c|code/dspapp/dl/src/data_task/common/crcpe_driver.c|code/dspapp/dl/src/data_task/common/byte_unpack_asm_dcch.c|code/dspapp/dl/src/data_task/common/byte_pack_asm_dcch.c|code/dspapp/dl/src/data_task/common/API_2_parser.c|code/dspapp/dl/src/data_task/pdp|code/dspapp/dl/src/control_task|code/dspapp/dl/src/common|code/dspapp/dl/inc|code/dspapp/dl/algo|code/dspapp/pus/src/SBL1_TRULSPK_VectorReorder.c|code/dspapp/pus/src/SBL1_TRULSPK_RMDecoding.c|code/dspapp/pus/src/SBL1_TRULSPK_posmaxabs.c|code/dspapp/pus/src/SBL1_TRULSPK_FHT.c|code/dspapp/pus/src/SBL1_TRULSPK_FHT_asm.c|code/dspapp/pus/src/SBL1_TRULSPK_Bitmasking.c|code/dspapp/pus/src/SBL1_PHULSPM_CWP.c|code/dspapp/pus/src/SBL1_PHULSPM_CWP_LUT.c|code/dspapp/pus/src/pusch_uci_dtx_detection.c|code/dspapp/pus/src/pusch_tmmse_noise_exp_c.c|code/dspapp/pus/src/pusch_tmmse_noise_exp_asm.c|code/dspapp/pus/src/pusch_tmmse_gen_coefs_c.c|code/dspapp/pus/src/pusch_tmmse_gen_coefs_asm.c|code/dspapp/pus/src/pusch_mmse_equalizer_idft_normalizer.c|code/dspapp/pus/src/pusch_harq_weight_calc.c|code/dspapp/pus/src/pusch_group_hopping_pattern.c|code/dspapp/pus/src/pusch_ematching_size_calc.c|code/dspapp/pus/src/pusch_deinterleaver_tables.c|code/dspapp/pus/src/pusch_data_derepetition.c|code/dspapp/pus/src/pus_maple_pupe_main.c|code/dspapp/pus/src/pus_3900_maple_etvpe_main.c|code/dspapp/pus/src/pus_3900_maple_eqpe_main.c|code/dspapp/pus/src/pus_3900_maple_driver.c|code/dspapp/pus/src/mem_cpy_asm.c|code/dspapp/pus/src/CWP_step_select.c|code/dspapp/pus/src/CWP_scramb_gen.c|code/dspapp/pus/src/CWP_data_CQI.c|code/dspapp/pus/src/CWP_ACK_RI.c|code/dspapp/tvpe/src|code/dspapp/hif/src/hif_srio_init.c|code/archB4420" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="os_b4860_family;com.freescale.starcore3900.cdt.toolchain.config.lib.debug.234425869.2077715221" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="os_b4860_family_drivers;com.freescale.starcore3900.cdt.toolchain.config.lib.debug.234425869.1950905618" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+			</storageModule>
+		</cconfiguration>
+		<cconfiguration id="com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249.1450548986">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249.1450548986" moduleId="org.eclipse.cdt.core.settings" name="B4860_Macro_SDCAM_Rev1">
+				<macros>
+					<stringMacro name="BUILD_VAR_NR_OF_CORES" type="VALUE_TEXT" value="6"/>
+					<stringMacro name="SDCxmBld" type="VALUE_PATH_DIR" value="D:\tmp_cw_SOC"/>
+				</macros>
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.managedbuilder.core.ManagedBuildManager" point="org.eclipse.cdt.core.ScannerInfoProvider"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.LltErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.AsmErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.IcodeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.CobjErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.starcore3900.cdt.errorParsers.SccErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.LnkErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.MwfeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.FssccErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="eld" artifactName="LR_SOC" buildProperties="" buildReferences="false" buildReferencingConfigurations="false" cleanCommand="&quot;${system:ECLIPSE_HOME}/../gnu/bin/rm&quot; -f" description="Macro configuration for SD-CxM boards with B4860 Rev1" errorParsers="com.freescale.core.ide.cdt.errorParsers.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser;com.freescale.core.ide.cdt.errorParsers.MwfeErrorParser;com.freescale.starcore3900.cdt.errorParsers.SccErrorParser;com.freescale.core.ide.cdt.errorParsers.LnkErrorParser;com.freescale.core.ide.cdt.errorParsers.AsmErrorParser;com.freescale.core.ide.cdt.errorParsers.CobjErrorParser;com.freescale.core.ide.cdt.errorParsers.IcodeErrorParser;com.freescale.core.ide.cdt.errorParsers.LltErrorParser;com.freescale.core.ide.cdt.errorParsers.FssccErrorParser;org.eclipse.cdt.core.GmakeErrorParser" id="com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249.1450548986" isPrebuildInvalidatingBuild="false" name="B4860_Macro_SDCAM_Rev1" parent="com.freescale.starcore3900.cdt.toolchain.config.debug" postannouncebuildStep="" postbuildStep="${PROJECT_LOC}/tools/SDCxm.bat &quot;${PROJECT_LOC}&quot; " preannouncebuildStep="" prebuildStep="" produceBuildErrorsWithMissingReferences="true">
+					<folderInfo id="com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249.1450548986." name="/" resourcePath="">
+						<toolChain errorParsers="" id="com.freescale.starcore3900.cdt.toolchain.project.c.debug.1126664607" name="StarCore 3900 Toolchain" superClass="com.freescale.starcore3900.cdt.toolchain.project.c.debug">
+							<option id="com.freescale.starcore3900.cdt.toolchain.global.architecture.256941292" name="Architecture" superClass="com.freescale.starcore3900.cdt.toolchain.global.architecture" value="com.freescale.starcore3900.cdt.toolchain.global.arch.b4860rev1" valueType="enumerated"/>
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.freescale.starcore3900.cdt.toolchain.root.targetplatform.263707827" isAbstract="false" name="StarCore Target Platform" superClass="com.freescale.starcore3900.cdt.toolchain.root.targetplatform"/>
+							<builder buildPath="${SDCxmBld}/${ConfigName}" errorParsers="" id="com.freescale.starcore3900.cdt.toolchain.root.builder.1619834710" keepEnvironmentInBuildfile="false" name="GNU Make Builder" parallelBuildOn="true" parallelBuildWorkspaceOn="true" parallelizationNumber="-1" superClass="com.freescale.starcore3900.cdt.toolchain.root.builder"/>
+							<tool command="disasmsc100" commandLinePattern="&quot;${SCToolsInstallDir3900}${COMMAND}&quot; ${FLAGS} ${INPUTS}" errorParsers="" id="com.freescale.starcore3900.cdt.toolchain.root.scDisassembler.2108302568" name="StarCore 3900 Disassembler" superClass="com.freescale.starcore3900.cdt.toolchain.root.scDisassembler"/>
+							<tool command="scc" commandLinePattern="&quot;${SCToolsInstallDir3900}${COMMAND}&quot; ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT}" errorParsers="com.freescale.starcore3900.cdt.errorParsers.SccErrorParser" id="com.freescale.starcore3900.cdt.toolchain.base.scLinker.14866947" name="StarCore 3900 C/C++ Linker Application" superClass="com.freescale.starcore3900.cdt.toolchain.base.scLinker">
+								<option id="com.freescale.starcore3900.cdt.toolchain.scLinker.commandFile.224364616" name="Linker Command File" superClass="com.freescale.starcore3900.cdt.toolchain.scLinker.commandFile" value="${ParentPrj}/arch_SoC/B4860/build/os_b4860_link.l3k" valueType="string"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scLinker.extraArgs.539289986" name="Additional Options" superClass="com.freescale.starcore3900.cdt.toolchain.scLinker.extraArgs" value="-Xlnk &quot;-D_ENABLE_CACHE=-1 -display-info1-in-map -enable-error-placing-section-on-first-fit-basis -o2-place -disable-allow-multiple-definition&quot;" valueType="string"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scLinker.mapFile.598689529" name="Map File" superClass="com.freescale.starcore3900.cdt.toolchain.scLinker.mapFile" value="${SDCxmBld}/${ConfigName}/build-${ProjName}-${ConfigName}/LR_SOC_Macro.map" valueType="string"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scLinker.libraries.additionalLibs.323063028" name="Additional Libraries" superClass="com.freescale.starcore3900.cdt.toolchain.scLinker.libraries.additionalLibs" valueType="libs">
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/lib/b4860_family/os_b4860_rev1.elb&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/lib/b4860_family/os_b4860_drivers_rev1.elb&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/lib/maple/b4860_maple3lw_api_lib_rev1.elb&quot;"/>
+								</option>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scLinker.c_cpp.customStartupFile.1935676044" name="Custom Start-up File" superClass="com.freescale.starcore3900.cdt.toolchain.scLinker.c_cpp.customStartupFile" value="${ParentPrj}\arch_SoC\B4860\build\startup__startup_b4860_.eln" valueType="string"/>
+								<inputType id="com.freescale.starcore3900.cdt.toolchain.scLinker.input.1260075068" name="StarCore Linker Input" superClass="com.freescale.starcore3900.cdt.toolchain.scLinker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionaldependency" paths="$(LCF_SRCS)"/>
+									<additionalInput kind="additionaldependency" paths="$(ELB_SRCS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool command="scc" commandLinePattern="&quot;${SCToolsInstallDir3900}${COMMAND}&quot; ${FLAGS} -o ${OUTPUT_PREFIX}${OUTPUT} -c ${INPUTS}" errorParsers="" id="com.freescale.starcore3900.cdt.toolchain.c.debug.scc.118141425" name="StarCore 3900 C/C++ Compiler" superClass="com.freescale.starcore3900.cdt.toolchain.c.debug.scc">
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.additionalOptions.configView.1491832161" name="Configuration View" superClass="com.freescale.starcore3900.cdt.toolchain.scc.additionalOptions.configView" value="B4860" valueType="string"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.additionalOptions.appConfigFile.932766694" name="Application Configuration File" superClass="com.freescale.starcore3900.cdt.toolchain.scc.additionalOptions.appConfigFile" value="${ParentPrj}/arch_SoC/B4860/build/B4860.appli" valueType="string"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.preprocessor.includePaths.1620959770" name="Include File Search Paths" superClass="com.freescale.starcore3900.cdt.toolchain.scc.preprocessor.includePaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/core_family/sc39xx&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/b4860/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/maple/rev3/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/cpri&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/b4860_family&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/b4860_family/heterogeneous&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/maple/rev3&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/source/arch/starcore/core_family/sc39XX/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/timers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/cpri&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/vsg&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/i2c&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/srio&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/vsg&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/ocn_dma&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/common/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/maple&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/maple/maple_api/b4860/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/cpri/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/cpri/include/arch&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/b4860_family&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/b4860_family/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/core_family/sc39xx/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/maple/rev3/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/ocn_dma/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/vsg/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/timers/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/timers/include/arch&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/timers/rev1/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/source/common/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/fwk/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/B4860/fw_adp/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/CM/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/SwViterbiDecoder/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/Maple/B4860&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PUSCH_AL/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/cif/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/com/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/maple_eftpe/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dia/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/erm/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/exe/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/CM/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/BitScrambling/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/ConvEncoding/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/CRCgeneration/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/ModMapping/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/RateMatching/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/Utilities/B4860&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/MatrixInversionCholesky\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPKernel/Beamforming/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPKernel/DL_LayerMapping_Precoding/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPKernel/DLCCHmapping/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/BCH/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/CFICH/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/DLCCH_PROC/include_lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/DLCCH_PROC/api&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PDCCH/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PDSCH_AL/include_lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PDSCH_AL/api&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PHICH/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PRS_CRS/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PSS_SSS/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PUSCH_AL/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/dl_itf&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/pdc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/pbc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/pds&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/itf/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/hif/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/maple/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/mea/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/algo&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/driver/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/puc/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pus/test/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pus/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/puc/tst&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/sim/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/tvpe/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/tvpe/test&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/../dspmacrotest/cluster_c_mt/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/cyc/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/../dspmacrotest/cluster_c_test/call_fkt&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/../dspmacrotest/cluster_c_test/call_fkt_3900&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/../dspmacrotest/cluster_c_test/framework&quot;"/>
+								</option>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.preprocessor.definedMacros.535781779" name="Defined Preprocessor Macros" superClass="com.freescale.starcore3900.cdt.toolchain.scc.preprocessor.definedMacros" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="NR_OF_CORES=${BUILD_VAR_NR_OF_CORES}"/>
+									<listOptionValue builtIn="false" value="CORE_PAD"/>
+									<listOptionValue builtIn="false" value="_SC3900FP_COMP_"/>
+									<listOptionValue builtIn="false" value="OS_B4_REV1"/>
+									<listOptionValue builtIn="false" value="HARDWARE_REV1"/>
+									<listOptionValue builtIn="false" value="ALLOW_O0_OPTIMIZATION_IN_SOME_FILES"/>
+									<listOptionValue builtIn="false" value="USE_DSP_FWK_ASSERT"/>
+									<listOptionValue builtIn="false" value="SYS_TRACE_LEVEL_3"/>
+									<listOptionValue builtIn="false" value="DEBUG_ASSERT_ON"/>
+									<listOptionValue builtIn="false" value="NOT_ADS"/>
+									<listOptionValue builtIn="false" value="ONLY_DSPC"/>
+									<listOptionValue builtIn="false" value="WAIT_FOR_SIM"/>
+									<listOptionValue builtIn="false" value="WAIT_FOR_CRCPE"/>
+									<listOptionValue builtIn="false" value="WAIT_FOR_HIF"/>
+									<listOptionValue builtIn="false" value="WAIT_FOR_CIF"/>
+									<listOptionValue builtIn="false" value="WAIT_FOR_DIA"/>
+									<listOptionValue builtIn="false" value="OS_MULTICORE=1"/>
+									<listOptionValue builtIn="false" value="SIMULATION"/>
+									<listOptionValue builtIn="false" value="BIG_ENDIAN_HOST"/>
+									<listOptionValue builtIn="false" value="DSP_BUILD"/>
+									<listOptionValue builtIn="false" value="SC39XX"/>
+									<listOptionValue builtIn="false" value="MMU_SUPPORT=1"/>
+									<listOptionValue builtIn="false" value="B4860"/>
+									<listOptionValue builtIn="false" value="B4860_REV1=1"/>
+									<listOptionValue builtIn="false" value="CPRI_ON_CORE4"/>
+									<listOptionValue builtIn="false" value="NOT_ACTIVE_CPRI_STUB"/>
+									<listOptionValue builtIn="false" value="EXE_LOG_CPRI_FFT"/>
+									<listOptionValue builtIn="false" value="FULL_DLMIMO"/>
+									<listOptionValue builtIn="false" value="MACRO"/>
+									<listOptionValue builtIn="false" value="_MANAGER_ASSERT_"/>
+									<listOptionValue builtIn="false" value="NOT_DL_AUTO_MT"/>
+									<listOptionValue builtIn="false" value="NOT_MEASURE_CYCLE"/>
+									<listOptionValue builtIn="false" value="PDSCH_EDF_IFFT_DIS"/>
+									<listOptionValue builtIn="false" value="ALU_AL_CONFIG_MACRO"/>
+									<listOptionValue builtIn="false" value="memcpy=memcpy8_asm"/>
+									<listOptionValue builtIn="false" value="memset=memset8_fast_asm"/>
+									<listOptionValue builtIn="false" value="NOT_PUSCH_MT"/>
+									<listOptionValue builtIn="false" value="NOT_PUSCH_UT"/>
+									<listOptionValue builtIn="false" value="NOT_PUSCH_EDF_MT"/>
+                                                                        <listOptionValue builtIn="false" value="DL_SYM_AW"/>
+								</option>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.additionalOptions.shell.507910242" name="To Shell" superClass="com.freescale.starcore3900.cdt.toolchain.scc.additionalOptions.shell" value="--keep -Xllt -c_mem0 -Xcfe -w=noextended -Xcfe -fl=no-fsalias_bytype" valueType="string"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.c.debug.scc.generateDebugInfo.1008885795" name="Generate Debugging Information" superClass="com.freescale.starcore3900.cdt.toolchain.c.debug.scc.generateDebugInfo" value="true" valueType="boolean"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.optimization.level.277986114" name="Optimization Level" superClass="com.freescale.starcore3900.cdt.toolchain.scc.optimization.level" value="com.freescale.starcore3900.cdt.toolchain.scc.optimization.level.level3" valueType="enumerated"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.compiler.mwfeWarningToError.702624123" name="Treat Warnings As Errors" superClass="com.freescale.starcore3900.cdt.toolchain.scc.compiler.mwfeWarningToError" value="com.freescale.starcore3900.cdt.toolchain.scc.compiler.mwfeWarningToErrorOn" valueType="enumerated"/>
+								<inputType id="com.freescale.starcore3900.cdt.toolchain.scc.cSource.726504546" name="Starcore C Source File" superClass="com.freescale.starcore3900.cdt.toolchain.scc.cSource"/>
+								<inputType id="com.freescale.starcore3900.cdt.toolchain.scc.cxxSource.16593353" name="Starcore C++ Source File" superClass="com.freescale.starcore3900.cdt.toolchain.scc.cxxSource"/>
+								<inputType id="com.freescale.starcore3900.cdt.toolchain.scc.s1Source.902799688" name="Starcore s1 Source File" superClass="com.freescale.starcore3900.cdt.toolchain.scc.s1Source"/>
+							</tool>
+							<tool command="scasm" commandLinePattern="&quot;${SCToolsInstallDir3900}${COMMAND}&quot; ${FLAGS} ${OUTPUT_FLAG}${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="" id="com.freescale.starcore3900.cdt.toolchain.base.scAsm.2090048297" name="StarCore 3900 Assembler" superClass="com.freescale.starcore3900.cdt.toolchain.base.scAsm">
+								<option id="com.freescale.starcore3900.cdt.toolchain.scAsm.generateDebugInfo.1086464258" name="Generate Debugging Information" superClass="com.freescale.starcore3900.cdt.toolchain.scAsm.generateDebugInfo" value="true" valueType="boolean"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scAsm.asmDefinedSyms.1114232481" name="Defined Symbols" superClass="com.freescale.starcore3900.cdt.toolchain.scAsm.asmDefinedSyms"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scAsm.includePaths.1084398739" name="Include File Search Paths" superClass="com.freescale.starcore3900.cdt.toolchain.scAsm.includePaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/b4860/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/maple/rev3/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/cpri&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/b4860_family&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/core_family/sc39xx&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/maple/rev3&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/timers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/cpri&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/vsg&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/i2c&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/srio&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/common/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/maple&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/maple/maple_api/b4860/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/cpri/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/cpri/include/arch&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/b4860_family&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/b4860_family/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/core_family/sc39xx/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/maple/rev3/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/vsg/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/source/common/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/fwk/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/B4860/fw_adp/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/cif/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/com/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/maple_eftpe/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dia/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/erm/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/exe/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/CM/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/BitScrambling/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/ConvEncoding/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/CRCgeneration/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/ModMapping/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/RateMatching/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/Utilities/B4860&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPKernel/Beamforming/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPKernel/DL_LayerMapping_Precoding/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPKernel/DLCCHmapping/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/BCH/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/CFICH/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/DLCCH_PROC/include_lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/DLCCH_PROC/api&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PDCCH/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PDSCH_AL/include_lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PDSCH_AL/api&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PHICH/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PRS_CRS/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PSS_SSS/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/dl_itf&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/pdc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/pbc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/itf/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/hif/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/maple/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/mea/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/algo&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/driver/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/puc/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pus/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/puc/tst&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/sim/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/tvpe/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/tvpe/test&quot;"/>
+								</option>
+								<inputType id="com.freescale.starcore3900.cdt.toolchain.scAsm.source.1646453631" name="StarCore Assembly Source File" superClass="com.freescale.starcore3900.cdt.toolchain.scAsm.source"/>
+							</tool>
+							<tool command="scc" commandLinePattern="&quot;${SCToolsInstallDir3900}${COMMAND}&quot; ${FLAGS} -c ${INPUTS}" errorParsers="" id="com.freescale.starcore3900.cdt.toolchain.base.scPreprocessor.635655723" name="StarCore 3900 Preprocessor" superClass="com.freescale.starcore3900.cdt.toolchain.base.scPreprocessor"/>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249.1450548986.1513142935" name="puc_3900_ack_nack.c" rcbsApplicability="disable" resourcePath="code/dspapp/puc/src/puc_3900_ack_nack.c" toolsToInvoke="com.freescale.starcore3900.cdt.toolchain.c.debug.scc.118141425.1003077126">
+						<tool errorParsers="" id="com.freescale.starcore3900.cdt.toolchain.c.debug.scc.118141425.1003077126" name="StarCore 3900 C/C++ Compiler" superClass="com.freescale.starcore3900.cdt.toolchain.c.debug.scc.118141425">
+							<option id="com.freescale.starcore3900.cdt.toolchain.scc.optimization.level.1075543187" name="Optimization Level" superClass="com.freescale.starcore3900.cdt.toolchain.scc.optimization.level" value="com.freescale.starcore3900.cdt.toolchain.scc.optimization.level.level3" valueType="enumerated"/>
+							<inputType id="com.freescale.starcore3900.cdt.toolchain.scc.cSource.1191934993" name="Starcore C Source File" superClass="com.freescale.starcore3900.cdt.toolchain.scc.cSource"/>
+							<inputType id="com.freescale.starcore3900.cdt.toolchain.scc.cxxSource.881134064" name="Starcore C++ Source File" superClass="com.freescale.starcore3900.cdt.toolchain.scc.cxxSource"/>
+							<inputType id="com.freescale.starcore3900.cdt.toolchain.scc.s1Source.131370227" name="Starcore s1 Source File" superClass="com.freescale.starcore3900.cdt.toolchain.scc.s1Source"/>
+						</tool>
+						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.1380805975" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.1354257805" name="Resource Custom Build Step Input Type">
+								<additionalInput kind="additionalinputdependency" paths=""/>
+							</inputType>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.639141454" name="Resource Custom Build Step Output Type"/>
+						</tool>
+					</fileInfo>
+					<sourceEntries>
+						<entry excluding="code/dspfwk/src/debug_trace|code/dspapp/pus/src/pusch_cfo_compensation_asm.c|code/FSL_Lib/L1/SP/SPManager/PUSCH_AL/src/b486x_shared_mem.c|code/FSL_Lib/L1/SP/SPManager/PUSCH_AL/src/b486x_init.c|code/FSL_Lib/L1/SP/SPManager/PUSCH_AL/src/b486x_config.c|code/dspapp/dl/src/data_task/pds/pds_task_main.c|code/dspapp/dl/src/data_task/pds/pds_task_init.c|code/dspapp/dl/src/data_task/pds/pds_cell_init.c|code/dspapp/maple/src/maple_init_C3.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPM_RBP.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPM_RBP_LUT.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_Repetition.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_PRBmapping.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_PRBmapping_LUTs.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_Modulation.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_Modulation_LUT.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_Modulation_LUT_15bit.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_DLRSgen.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_BitScrambling.c|code/dspapp/dl/src/data_task/common/SBL1_DL_PDP_Init.c|code/dspapp/dl/src/data_task/common/PDP_Emulation.c|code/dspapp/dl/src/data_task/common/PDP_driver.c|code/dspapp/dl/src/data_task/common/ftpe_driver.c|code/dspapp/dl/src/data_task/common/dl_tm_test_samples.c|code/dspapp/dl/src/data_task/common/depe_driver.c|code/dspapp/dl/src/data_task/common/crcpe_driver.c|code/dspapp/dl/src/data_task/common/byte_unpack_asm_dcch.c|code/dspapp/dl/src/data_task/common/byte_pack_asm_dcch.c|code/dspapp/dl/src/data_task/common/API_2_parser.c|code/dspapp/dl/src/data_task/pdp|code/dspapp/dl/src/control_task|code/dspapp/dl/src/common|code/dspapp/dl/inc|code/dspapp/dl/algo|code/dspapp/pus/src/SBL1_TRULSPK_VectorReorder.c|code/dspapp/pus/src/SBL1_TRULSPK_RMDecoding.c|code/dspapp/pus/src/SBL1_TRULSPK_posmaxabs.c|code/dspapp/pus/src/SBL1_TRULSPK_FHT.c|code/dspapp/pus/src/SBL1_TRULSPK_FHT_asm.c|code/dspapp/pus/src/SBL1_TRULSPK_Bitmasking.c|code/dspapp/pus/src/SBL1_PHULSPM_CWP.c|code/dspapp/pus/src/SBL1_PHULSPM_CWP_LUT.c|code/dspapp/pus/src/pusch_uci_dtx_detection.c|code/dspapp/pus/src/pusch_tmmse_noise_exp_c.c|code/dspapp/pus/src/pusch_tmmse_noise_exp_asm.c|code/dspapp/pus/src/pusch_tmmse_gen_coefs_c.c|code/dspapp/pus/src/pusch_tmmse_gen_coefs_asm.c|code/dspapp/pus/src/pusch_mmse_equalizer_idft_normalizer.c|code/dspapp/pus/src/pusch_harq_weight_calc.c|code/dspapp/pus/src/pusch_group_hopping_pattern.c|code/dspapp/pus/src/pusch_ematching_size_calc.c|code/dspapp/pus/src/pusch_deinterleaver_tables.c|code/dspapp/pus/src/pusch_data_derepetition.c|code/dspapp/pus/src/pus_maple_pupe_main.c|code/dspapp/pus/src/pus_3900_maple_etvpe_main.c|code/dspapp/pus/src/pus_3900_maple_eqpe_main.c|code/dspapp/pus/src/pus_3900_maple_driver.c|code/dspapp/pus/src/mem_cpy_asm.c|code/dspapp/pus/src/CWP_step_select.c|code/dspapp/pus/src/CWP_scramb_gen.c|code/dspapp/pus/src/CWP_data_CQI.c|code/dspapp/pus/src/CWP_ACK_RI.c|code/dspapp/tvpe/src|code/dspapp/hif/src/hif_srio_init.c|code/archB4420" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="os_b4860_family;com.freescale.starcore3900.cdt.toolchain.config.lib.debug.234425869.2077715221" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="os_b4860_family_drivers;com.freescale.starcore3900.cdt.toolchain.config.lib.debug.234425869.1950905618" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+			</storageModule>
+		</cconfiguration>
+		<cconfiguration id="com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249.1450548986.1393776241">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249.1450548986.1393776241" moduleId="org.eclipse.cdt.core.settings" name="B4860_Macro_SDCAM_Rev2">
+				<macros>
+					<stringMacro name="BUILD_VAR_NR_OF_CORES" type="VALUE_TEXT" value="6"/>
+					<stringMacro name="SDCxmBld" type="VALUE_PATH_DIR" value="D:\tmp_cw_SOC"/>
+				</macros>
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.managedbuilder.core.ManagedBuildManager" point="org.eclipse.cdt.core.ScannerInfoProvider"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.LltErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.AsmErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.IcodeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.CobjErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.starcore3900.cdt.errorParsers.SccErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.LnkErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.MwfeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.FssccErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="eld" artifactName="LR_SOC" buildProperties="" buildReferences="false" buildReferencingConfigurations="false" cleanCommand="&quot;${system:ECLIPSE_HOME}/../gnu/bin/rm&quot; -f" description="Macro configuration for SD-CxM boards with B4860 Rev2" errorParsers="com.freescale.core.ide.cdt.errorParsers.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser;com.freescale.core.ide.cdt.errorParsers.MwfeErrorParser;com.freescale.starcore3900.cdt.errorParsers.SccErrorParser;com.freescale.core.ide.cdt.errorParsers.LnkErrorParser;com.freescale.core.ide.cdt.errorParsers.AsmErrorParser;com.freescale.core.ide.cdt.errorParsers.CobjErrorParser;com.freescale.core.ide.cdt.errorParsers.IcodeErrorParser;com.freescale.core.ide.cdt.errorParsers.LltErrorParser;com.freescale.core.ide.cdt.errorParsers.FssccErrorParser;org.eclipse.cdt.core.GmakeErrorParser" id="com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249.1450548986.1393776241" isPrebuildInvalidatingBuild="false" name="B4860_Macro_SDCAM_Rev2" parent="com.freescale.starcore3900.cdt.toolchain.config.debug" postannouncebuildStep="" postbuildStep="${PROJECT_LOC}/tools/SDCxm.bat &quot;${PROJECT_LOC}&quot; " preannouncebuildStep="" prebuildStep="" produceBuildErrorsWithMissingReferences="true">
+					<folderInfo id="com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249.1450548986.1393776241." name="/" resourcePath="">
+						<toolChain errorParsers="" id="com.freescale.starcore3900.cdt.toolchain.project.c.debug.883198502" name="StarCore 3900 Toolchain" superClass="com.freescale.starcore3900.cdt.toolchain.project.c.debug">
+							<option id="com.freescale.starcore3900.cdt.toolchain.global.architecture.2130514032" name="Architecture" superClass="com.freescale.starcore3900.cdt.toolchain.global.architecture" value="com.freescale.starcore3900.cdt.toolchain.global.arch.b4860" valueType="enumerated"/>
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.freescale.starcore3900.cdt.toolchain.root.targetplatform.1190880644" isAbstract="false" name="StarCore Target Platform" superClass="com.freescale.starcore3900.cdt.toolchain.root.targetplatform"/>
+							<builder buildPath="${SDCxmBld}/${ConfigName}" errorParsers="" id="com.freescale.starcore3900.cdt.toolchain.root.builder.1470937295" keepEnvironmentInBuildfile="false" name="GNU Make Builder" parallelBuildOn="true" parallelBuildWorkspaceOn="true" parallelizationNumber="-1" superClass="com.freescale.starcore3900.cdt.toolchain.root.builder"/>
+							<tool command="disasmsc100" commandLinePattern="&quot;${SCToolsInstallDir3900}${COMMAND}&quot; ${FLAGS} ${INPUTS}" errorParsers="" id="com.freescale.starcore3900.cdt.toolchain.root.scDisassembler.2000433995" name="StarCore 3900 Disassembler" superClass="com.freescale.starcore3900.cdt.toolchain.root.scDisassembler"/>
+							<tool command="scc" commandLinePattern="&quot;${SCToolsInstallDir3900}${COMMAND}&quot; ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT}" errorParsers="com.freescale.starcore3900.cdt.errorParsers.SccErrorParser" id="com.freescale.starcore3900.cdt.toolchain.base.scLinker.234083452" name="StarCore 3900 C/C++ Linker Application" superClass="com.freescale.starcore3900.cdt.toolchain.base.scLinker">
+								<option id="com.freescale.starcore3900.cdt.toolchain.scLinker.commandFile.597438164" name="Linker Command File" superClass="com.freescale.starcore3900.cdt.toolchain.scLinker.commandFile" value="${ParentPrj}/arch_SoC/B4860/build/os_b4860_link.l3k" valueType="string"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scLinker.extraArgs.434799099" name="Additional Options" superClass="com.freescale.starcore3900.cdt.toolchain.scLinker.extraArgs" value="-Xlnk &quot;-D_ENABLE_CACHE=-1 -display-info1-in-map -enable-error-placing-section-on-first-fit-basis -o2-place -disable-allow-multiple-definition&quot;" valueType="string"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scLinker.mapFile.65385774" name="Map File" superClass="com.freescale.starcore3900.cdt.toolchain.scLinker.mapFile" value="${SDCxmBld}/${ConfigName}/build-${ProjName}-${ConfigName}/LR_SOC_Macro.map" valueType="string"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scLinker.libraries.additionalLibs.1079752156" name="Additional Libraries" superClass="com.freescale.starcore3900.cdt.toolchain.scLinker.libraries.additionalLibs" valueType="libs">
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/lib/b4860_family/os_b4860_debug.elb&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/lib/b4860_family/os_b4860_drivers.elb&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/lib/maple/b4860_maple3lw_api_lib.elb&quot;"/>
+								</option>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scLinker.c_cpp.customStartupFile.1686249772" name="Custom Start-up File" superClass="com.freescale.starcore3900.cdt.toolchain.scLinker.c_cpp.customStartupFile" value="${ParentPrj}\arch_SoC\B4860\build\startup__startup_b4860_.eln" valueType="string"/>
+								<inputType id="com.freescale.starcore3900.cdt.toolchain.scLinker.input.1234729516" name="StarCore Linker Input" superClass="com.freescale.starcore3900.cdt.toolchain.scLinker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionaldependency" paths="$(LCF_SRCS)"/>
+									<additionalInput kind="additionaldependency" paths="$(ELB_SRCS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool command="scc" commandLinePattern="&quot;${SCToolsInstallDir3900}${COMMAND}&quot; ${FLAGS} -o ${OUTPUT_PREFIX}${OUTPUT} -c ${INPUTS}" errorParsers="" id="com.freescale.starcore3900.cdt.toolchain.c.debug.scc.1894096331" name="StarCore 3900 C/C++ Compiler" superClass="com.freescale.starcore3900.cdt.toolchain.c.debug.scc">
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.additionalOptions.configView.1196260099" name="Configuration View" superClass="com.freescale.starcore3900.cdt.toolchain.scc.additionalOptions.configView" value="B4860" valueType="string"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.additionalOptions.appConfigFile.1297595182" name="Application Configuration File" superClass="com.freescale.starcore3900.cdt.toolchain.scc.additionalOptions.appConfigFile" value="${ParentPrj}/arch_SoC/B4860/build/B4860.appli" valueType="string"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.preprocessor.includePaths.1634126481" name="Include File Search Paths" superClass="com.freescale.starcore3900.cdt.toolchain.scc.preprocessor.includePaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/core_family/sc39xx&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/b4860/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/maple/rev3/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/timers/rev1/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/cpri&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/b4860_family&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/b4860_family/heterogeneous&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/maple/rev3&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/source/arch/starcore/core_family/sc39XX/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/timers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/cpri&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/i2c&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/srio&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/vsg&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/ocn_dma&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/common/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/maple&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/maple/maple_api/b4860/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/cpri/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/cpri/include/arch&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/b4860_family&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/b4860_family/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/core_family/sc39xx/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/maple/rev3/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/ocn_dma/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/vsg/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/timers/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/timers/include/arch&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/source/common/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/fwk/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/B4860/fw_adp/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/CM/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/SwViterbiDecoder/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/Maple/B4860&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PUSCH_AL/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/cif/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/com/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/maple_eftpe/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dia/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/erm/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/exe/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/BitScrambling/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/ConvEncoding/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/CRCgeneration/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/ModMapping/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/RateMatching/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/Utilities/B4860&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPKernel/Beamforming/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPKernel/DL_LayerMapping_Precoding/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPKernel/DLCCHmapping/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/BCH/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/CFICH/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/DLCCH_PROC/include_lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/DLCCH_PROC/api&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PDCCH/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PDSCH_AL/include_lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PDSCH_AL/api&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PHICH/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PRS_CRS/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PSS_SSS/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PUSCH_AL/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/MatrixInversionCholesky/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/MatrixInversionCholesky/src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/dl_itf&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/pds&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/pdc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/pbc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/itf/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/hif/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/maple/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/mea/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/algo&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/driver/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/puc/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/puc/tst&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pus/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pus/test/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/sim/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/tvpe/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/tvpe/test&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/../dspmacrotest/cluster_c_mt/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/cyc/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/../dspmacrotest/cluster_c_test/call_fkt&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/../dspmacrotest/cluster_c_test/call_fkt_3900&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/../dspmacrotest/cluster_c_test/framework&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/pds&quot;"/>
+								</option>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.preprocessor.definedMacros.1605471056" name="Defined Preprocessor Macros" superClass="com.freescale.starcore3900.cdt.toolchain.scc.preprocessor.definedMacros" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="NR_OF_CORES=${BUILD_VAR_NR_OF_CORES}"/>
+									<listOptionValue builtIn="false" value="_SC3900FP_COMP_"/>
+									<listOptionValue builtIn="false" value="HARDWARE_REV1"/>
+									<listOptionValue builtIn="false" value="ALLOW_O0_OPTIMIZATION_IN_SOME_FILES"/>
+									<listOptionValue builtIn="false" value="USE_DSP_FWK_ASSERT"/>
+									<listOptionValue builtIn="false" value="SYS_TRACE_LEVEL_3"/>
+									<listOptionValue builtIn="false" value="DEBUG_ASSERT_ON"/>
+									<listOptionValue builtIn="false" value="NOT_ADS"/>
+									<listOptionValue builtIn="false" value="ONLY_DSPC"/>
+									<listOptionValue builtIn="false" value="WAIT_FOR_SIM"/>
+									<listOptionValue builtIn="false" value="WAIT_FOR_CRCPE"/>
+									<listOptionValue builtIn="false" value="WAIT_FOR_HIF"/>
+									<listOptionValue builtIn="false" value="WAIT_FOR_CIF"/>
+									<listOptionValue builtIn="false" value="WAIT_FOR_DIA"/>
+									<listOptionValue builtIn="false" value="OS_MULTICORE=1"/>
+									<listOptionValue builtIn="false" value="MAPLE_PAD"/>
+									<listOptionValue builtIn="false" value="SIMULATION"/>
+									<listOptionValue builtIn="false" value="BIG_ENDIAN_HOST"/>
+									<listOptionValue builtIn="false" value="DSP_BUILD"/>
+									<listOptionValue builtIn="false" value="SC39XX"/>
+									<listOptionValue builtIn="false" value="MMU_SUPPORT=1"/>
+									<listOptionValue builtIn="false" value="B4860"/>
+									<listOptionValue builtIn="false" value="B4860_REV2=1"/>
+									<listOptionValue builtIn="false" value="CPRI_ON_CORE4"/>
+									<listOptionValue builtIn="false" value="NOT_ACTIVE_CPRI_STUB"/>
+									<listOptionValue builtIn="false" value="EXE_LOG_CPRI_FFT"/>
+									<listOptionValue builtIn="false" value="FULL_DLMIMO"/>
+									<listOptionValue builtIn="false" value="MACRO"/>
+									<listOptionValue builtIn="false" value="_MANAGER_ASSERT_"/>
+									<listOptionValue builtIn="false" value="ALU_AL_CONFIG_MACRO"/>
+									<listOptionValue builtIn="false" value="memcpy=memcpy8_asm"/>
+									<listOptionValue builtIn="false" value="memset=memset8_fast_asm"/>
+									<listOptionValue builtIn="false" value="NOT_PUSCH_MT"/>
+									<listOptionValue builtIn="false" value="NOT_PUSCH_UT"/>
+									<listOptionValue builtIn="false" value="NOT_PUSCH_EDF_MT"/>
+									<listOptionValue builtIn="false" value="NOT_DL_AUTO_MT"/>
+									<listOptionValue builtIn="false" value="NOT_MEASURE_CYCLE"/>
+									<listOptionValue builtIn="false" value="NOT_PDSCH_EDF_IFFT_DIS"/>
+                                                                        <listOptionValue builtIn="false" value="DL_SYM_AW"/>
+                                                                        <listOptionValue builtIn="false" value="REV2_PCR_2_MPL_DL"/>
+                                                                        <listOptionValue builtIn="false" value="NOT_REV2_QT_INT_2_MPL_DL"/>
+								</option>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.additionalOptions.shell.2009519903" name="To Shell" superClass="com.freescale.starcore3900.cdt.toolchain.scc.additionalOptions.shell" value="--keep -Xllt -c_mem0 -Xcfe -w=noextended -Xcfe -fl=no-fsalias_bytype" valueType="string"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.c.debug.scc.generateDebugInfo.1436144021" name="Generate Debugging Information" superClass="com.freescale.starcore3900.cdt.toolchain.c.debug.scc.generateDebugInfo" value="true" valueType="boolean"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.optimization.level.680874889" name="Optimization Level" superClass="com.freescale.starcore3900.cdt.toolchain.scc.optimization.level" value="com.freescale.starcore3900.cdt.toolchain.scc.optimization.level.level3" valueType="enumerated"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.compiler.mwfeWarningToError.479089613" name="Treat Warnings As Errors" superClass="com.freescale.starcore3900.cdt.toolchain.scc.compiler.mwfeWarningToError" value="com.freescale.starcore3900.cdt.toolchain.scc.compiler.mwfeWarningToErrorOn" valueType="enumerated"/>
+								<inputType id="com.freescale.starcore3900.cdt.toolchain.scc.cSource.1667297724" name="Starcore C Source File" superClass="com.freescale.starcore3900.cdt.toolchain.scc.cSource"/>
+								<inputType id="com.freescale.starcore3900.cdt.toolchain.scc.cxxSource.1098686460" name="Starcore C++ Source File" superClass="com.freescale.starcore3900.cdt.toolchain.scc.cxxSource"/>
+								<inputType id="com.freescale.starcore3900.cdt.toolchain.scc.s1Source.1048322510" name="Starcore s1 Source File" superClass="com.freescale.starcore3900.cdt.toolchain.scc.s1Source"/>
+							</tool>
+							<tool command="scasm" commandLinePattern="&quot;${SCToolsInstallDir3900}${COMMAND}&quot; ${FLAGS} ${OUTPUT_FLAG}${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="" id="com.freescale.starcore3900.cdt.toolchain.base.scAsm.1724585354" name="StarCore 3900 Assembler" superClass="com.freescale.starcore3900.cdt.toolchain.base.scAsm">
+								<option id="com.freescale.starcore3900.cdt.toolchain.scAsm.generateDebugInfo.76389594" name="Generate Debugging Information" superClass="com.freescale.starcore3900.cdt.toolchain.scAsm.generateDebugInfo" value="true" valueType="boolean"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scAsm.asmDefinedSyms.1540517121" name="Defined Symbols" superClass="com.freescale.starcore3900.cdt.toolchain.scAsm.asmDefinedSyms"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scAsm.includePaths.980604593" name="Include File Search Paths" superClass="com.freescale.starcore3900.cdt.toolchain.scAsm.includePaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/b4860/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/maple/rev3/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/cpri&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/b4860_family&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/core_family/sc39xx&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/maple/rev3&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/timers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/cpri&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/vsg&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/i2c&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/srio&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/common/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/maple&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/maple/maple_api/b4860/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/cpri/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/cpri/include/arch&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/b4860_family&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/b4860_family/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/core_family/sc39xx/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/maple/rev3/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/vsg/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/source/common/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/fwk/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/B4860/fw_adp/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/cif/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/com/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/maple_eftpe/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dia/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/erm/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/exe/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/CM/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/BitScrambling/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/ConvEncoding/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/CRCgeneration/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/ModMapping/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/RateMatching/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/Utilities/B4860&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/dl_itf&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/pdc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/pbc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/itf/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/hif/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/maple/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/mea/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/algo&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/driver/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/puc/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pus/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/puc/tst&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/sim/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/tvpe/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/tvpe/test&quot;"/>
+								</option>
+								<inputType id="com.freescale.starcore3900.cdt.toolchain.scAsm.source.119629340" name="StarCore Assembly Source File" superClass="com.freescale.starcore3900.cdt.toolchain.scAsm.source"/>
+							</tool>
+							<tool command="scc" commandLinePattern="&quot;${SCToolsInstallDir3900}${COMMAND}&quot; ${FLAGS} -c ${INPUTS}" errorParsers="" id="com.freescale.starcore3900.cdt.toolchain.base.scPreprocessor.1170835225" name="StarCore 3900 Preprocessor" superClass="com.freescale.starcore3900.cdt.toolchain.base.scPreprocessor"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="code/dspfwk/src/debug_trace|code/dspapp/pus/src/pusch_cfo_compensation_asm.c|code/FSL_Lib/L1/SP/SPManager/PUSCH_AL/src/b486x_shared_mem.c|code/FSL_Lib/L1/SP/SPManager/PUSCH_AL/src/b486x_init.c|code/FSL_Lib/L1/SP/SPManager/PUSCH_AL/src/b486x_config.c|code/dspapp/dl/src/data_task/pds/pds_task_main.c|code/dspapp/dl/src/data_task/pds/pds_task_init.c|code/dspapp/dl/src/data_task/pds/pds_cell_init.c|code/dspapp/maple/src/maple_init_C3.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPM_RBP.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPM_RBP_LUT.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_Repetition.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_PRBmapping.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_PRBmapping_LUTs.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_Modulation.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_Modulation_LUT.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_Modulation_LUT_15bit.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_DLRSgen.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_BitScrambling.c|code/dspapp/dl/src/data_task/common/SBL1_DL_PDP_Init.c|code/dspapp/dl/src/data_task/common/PDP_Emulation.c|code/dspapp/dl/src/data_task/common/PDP_driver.c|code/dspapp/dl/src/data_task/common/ftpe_driver.c|code/dspapp/dl/src/data_task/common/dl_tm_test_samples.c|code/dspapp/dl/src/data_task/common/depe_driver.c|code/dspapp/dl/src/data_task/common/crcpe_driver.c|code/dspapp/dl/src/data_task/common/byte_unpack_asm_dcch.c|code/dspapp/dl/src/data_task/common/byte_pack_asm_dcch.c|code/dspapp/dl/src/data_task/common/API_2_parser.c|code/dspapp/dl/src/data_task/pdp|code/dspapp/dl/src/control_task|code/dspapp/dl/src/common|code/dspapp/dl/inc|code/dspapp/dl/algo|code/dspapp/pus/src/SBL1_TRULSPK_VectorReorder.c|code/dspapp/pus/src/SBL1_TRULSPK_RMDecoding.c|code/dspapp/pus/src/SBL1_TRULSPK_posmaxabs.c|code/dspapp/pus/src/SBL1_TRULSPK_FHT.c|code/dspapp/pus/src/SBL1_TRULSPK_FHT_asm.c|code/dspapp/pus/src/SBL1_TRULSPK_Bitmasking.c|code/dspapp/pus/src/SBL1_PHULSPM_CWP.c|code/dspapp/pus/src/SBL1_PHULSPM_CWP_LUT.c|code/dspapp/pus/src/pusch_uci_dtx_detection.c|code/dspapp/pus/src/pusch_tmmse_noise_exp_c.c|code/dspapp/pus/src/pusch_tmmse_noise_exp_asm.c|code/dspapp/pus/src/pusch_tmmse_gen_coefs_c.c|code/dspapp/pus/src/pusch_tmmse_gen_coefs_asm.c|code/dspapp/pus/src/pusch_mmse_equalizer_idft_normalizer.c|code/dspapp/pus/src/pusch_harq_weight_calc.c|code/dspapp/pus/src/pusch_group_hopping_pattern.c|code/dspapp/pus/src/pusch_ematching_size_calc.c|code/dspapp/pus/src/pusch_deinterleaver_tables.c|code/dspapp/pus/src/pusch_data_derepetition.c|code/dspapp/pus/src/pus_maple_pupe_main.c|code/dspapp/pus/src/pus_3900_maple_etvpe_main.c|code/dspapp/pus/src/pus_3900_maple_eqpe_main.c|code/dspapp/pus/src/pus_3900_maple_driver.c|code/dspapp/pus/src/mem_cpy_asm.c|code/dspapp/pus/src/CWP_step_select.c|code/dspapp/pus/src/CWP_scramb_gen.c|code/dspapp/pus/src/CWP_data_CQI.c|code/dspapp/pus/src/CWP_ACK_RI.c|code/dspapp/tvpe/src|code/dspapp/hif/src/hif_srio_init.c|code/archB4420" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="os_b4860_family;com.freescale.starcore3900.cdt.toolchain.config.lib.debug.234425869.2077715221" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="os_b4860_family_drivers;com.freescale.starcore3900.cdt.toolchain.config.lib.debug.234425869.1950905618" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+			</storageModule>
+		</cconfiguration>
+		<cconfiguration id="com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249.1717332598">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249.1717332598" moduleId="org.eclipse.cdt.core.settings" name="B4860_Macro_QDS_Rev2">
+				<macros>
+					<stringMacro name="BUILD_VAR_NR_OF_CORES" type="VALUE_TEXT" value="6"/>
+					<stringMacro name="SDCxmBld" type="VALUE_PATH_DIR" value="D:\tmp_cw_SOC"/>
+				</macros>
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.managedbuilder.core.ManagedBuildManager" point="org.eclipse.cdt.core.ScannerInfoProvider"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.LltErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.AsmErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.IcodeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.CobjErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.starcore3900.cdt.errorParsers.SccErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.LnkErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.MwfeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.FssccErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="eld" artifactName="LR_SOC" buildProperties="" buildReferences="false" buildReferencingConfigurations="false" cleanCommand="&quot;${system:ECLIPSE_HOME}/../gnu/bin/rm&quot; -f" description="Macro configuration for Rev2 QDS boards" errorParsers="com.freescale.core.ide.cdt.errorParsers.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser;com.freescale.core.ide.cdt.errorParsers.MwfeErrorParser;com.freescale.starcore3900.cdt.errorParsers.SccErrorParser;com.freescale.core.ide.cdt.errorParsers.LnkErrorParser;com.freescale.core.ide.cdt.errorParsers.AsmErrorParser;com.freescale.core.ide.cdt.errorParsers.CobjErrorParser;com.freescale.core.ide.cdt.errorParsers.IcodeErrorParser;com.freescale.core.ide.cdt.errorParsers.LltErrorParser;com.freescale.core.ide.cdt.errorParsers.FssccErrorParser;org.eclipse.cdt.core.GmakeErrorParser" id="com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249.1717332598" isPrebuildInvalidatingBuild="false" name="B4860_Macro_QDS_Rev2" parent="com.freescale.starcore3900.cdt.toolchain.config.debug" postannouncebuildStep="" postbuildStep="" preannouncebuildStep="" prebuildStep="" produceBuildErrorsWithMissingReferences="true">
+					<folderInfo id="com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249.1717332598." name="/" resourcePath="">
+						<toolChain errorParsers="" id="com.freescale.starcore3900.cdt.toolchain.project.c.debug.57517540" name="StarCore 3900 Toolchain" superClass="com.freescale.starcore3900.cdt.toolchain.project.c.debug">
+							<option id="com.freescale.starcore3900.cdt.toolchain.global.architecture.62971071" name="Architecture" superClass="com.freescale.starcore3900.cdt.toolchain.global.architecture" value="com.freescale.starcore3900.cdt.toolchain.global.arch.b4860" valueType="enumerated"/>
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.freescale.starcore3900.cdt.toolchain.root.targetplatform.424087876" isAbstract="false" name="StarCore Target Platform" superClass="com.freescale.starcore3900.cdt.toolchain.root.targetplatform"/>
+							<builder buildPath="${SDCxmBld}/${ConfigName}" errorParsers="" id="com.freescale.starcore3900.cdt.toolchain.root.builder.1338325986" keepEnvironmentInBuildfile="false" name="GNU Make Builder" parallelBuildOn="true" parallelBuildWorkspaceOn="true" parallelizationNumber="-1" superClass="com.freescale.starcore3900.cdt.toolchain.root.builder"/>
+							<tool command="disasmsc100" commandLinePattern="&quot;${SCToolsInstallDir3900}${COMMAND}&quot; ${FLAGS} ${INPUTS}" errorParsers="" id="com.freescale.starcore3900.cdt.toolchain.root.scDisassembler.267508178" name="StarCore 3900 Disassembler" superClass="com.freescale.starcore3900.cdt.toolchain.root.scDisassembler"/>
+							<tool command="scc" commandLinePattern="&quot;${SCToolsInstallDir3900}${COMMAND}&quot; ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT}" errorParsers="com.freescale.starcore3900.cdt.errorParsers.SccErrorParser" id="com.freescale.starcore3900.cdt.toolchain.base.scLinker.1472447823" name="StarCore 3900 C/C++ Linker Application" superClass="com.freescale.starcore3900.cdt.toolchain.base.scLinker">
+								<option id="com.freescale.starcore3900.cdt.toolchain.scLinker.commandFile.1043230761" name="Linker Command File" superClass="com.freescale.starcore3900.cdt.toolchain.scLinker.commandFile" value="${ParentPrj}/arch_SoC/B4860/build/os_b4860_link.l3k" valueType="string"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scLinker.extraArgs.192480859" name="Additional Options" superClass="com.freescale.starcore3900.cdt.toolchain.scLinker.extraArgs" value="-Xlnk &quot;-D_ENABLE_CACHE=-1 -display-info1-in-map -enable-error-placing-section-on-first-fit-basis -o2-place -disable-allow-multiple-definition&quot;" valueType="string"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scLinker.mapFile.1454188556" name="Map File" superClass="com.freescale.starcore3900.cdt.toolchain.scLinker.mapFile" value="${SDCxmBld}/${ConfigName}/build-${ProjName}-${ConfigName}/LR_SOC_Macro.map" valueType="string"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scLinker.libraries.additionalLibs.699506051" name="Additional Libraries" superClass="com.freescale.starcore3900.cdt.toolchain.scLinker.libraries.additionalLibs" valueType="libs">
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/lib/b4860_family/os_b4860.elb&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/lib/b4860_family/os_b4860_drivers.elb&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/lib/maple/b4860_maple3lw_api_lib.elb&quot;"/>
+								</option>
+								<inputType id="com.freescale.starcore3900.cdt.toolchain.scLinker.input.1002937564" name="StarCore Linker Input" superClass="com.freescale.starcore3900.cdt.toolchain.scLinker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionaldependency" paths="$(LCF_SRCS)"/>
+									<additionalInput kind="additionaldependency" paths="$(ELB_SRCS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool command="scc" commandLinePattern="&quot;${SCToolsInstallDir3900}${COMMAND}&quot; ${FLAGS} -o ${OUTPUT_PREFIX}${OUTPUT} -c ${INPUTS}" errorParsers="" id="com.freescale.starcore3900.cdt.toolchain.c.debug.scc.350497800" name="StarCore 3900 C/C++ Compiler" superClass="com.freescale.starcore3900.cdt.toolchain.c.debug.scc">
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.additionalOptions.configView.1979249621" name="Configuration View" superClass="com.freescale.starcore3900.cdt.toolchain.scc.additionalOptions.configView" value="B4860" valueType="string"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.additionalOptions.appConfigFile.1221685530" name="Application Configuration File" superClass="com.freescale.starcore3900.cdt.toolchain.scc.additionalOptions.appConfigFile" value="${ParentPrj}/arch_SoC/B4860/build/B4860.appli" valueType="string"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.preprocessor.includePaths.651860787" name="Include File Search Paths" superClass="com.freescale.starcore3900.cdt.toolchain.scc.preprocessor.includePaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/core_family/sc39xx&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/b4860/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/maple/rev3/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/timers/rev1/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/cpri&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/b4860_family&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/b4860_family/heterogeneous&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/maple/rev3&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/source/arch/starcore/core_family/sc39XX/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/timers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/cpri&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/i2c&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/srio&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/vsg&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/ocn_dma&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/common/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/maple&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/maple/maple_api/b4860/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/cpri/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/cpri/include/arch&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/b4860_family&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/b4860_family/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/core_family/sc39xx/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/maple/rev3/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/ocn_dma/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/vsg/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/timers/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/timers/include/arch&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/source/common/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/fwk/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/B4860/fw_adp/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/CM/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/SwViterbiDecoder/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/Maple/B4860&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PUSCH_AL/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/cif/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/com/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/maple_eftpe/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dia/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/erm/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/exe/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/BitScrambling/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/ConvEncoding/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/CRCgeneration/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/ModMapping/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/RateMatching/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/Utilities/B4860&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPKernel/Beamforming/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPKernel/DL_LayerMapping_Precoding/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPKernel/DLCCHmapping/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/BCH/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/CFICH/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/DLCCH_PROC/include_lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/DLCCH_PROC/api&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PDCCH/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PDSCH_AL/include_lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PDSCH_AL/api&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PHICH/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PRS_CRS/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PSS_SSS/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/SPManager/PUSCH_AL/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/MatrixInversionCholesky/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/MatrixInversionCholesky/src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/dl_itf&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/pdc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/pbc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/pds&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/itf/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/hif/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/maple/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/mea/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/algo&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/driver/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/puc/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/puc/tst&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pus/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pus/test/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/sim/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/tvpe/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/tvpe/test&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/../dspmacrotest/cluster_c_mt/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/cyc/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/../dspmacrotest/cluster_c_test/call_fkt&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/../dspmacrotest/cluster_c_test/call_fkt_3900&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/../dspmacrotest/cluster_c_test/framework&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/../dspmacrotest/cluster_b_mt/code/ut/inc&quot;"/>
+								</option>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.preprocessor.definedMacros.1051574024" name="Defined Preprocessor Macros" superClass="com.freescale.starcore3900.cdt.toolchain.scc.preprocessor.definedMacros" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="NR_OF_CORES=${BUILD_VAR_NR_OF_CORES}"/>
+									<listOptionValue builtIn="false" value="HARDWARE_REV2"/>
+									<listOptionValue builtIn="false" value="ALLOW_O0_OPTIMIZATION_IN_SOME_FILES"/>
+									<listOptionValue builtIn="false" value="USE_DSP_FWK_ASSERT"/>
+									<listOptionValue builtIn="false" value="SYS_TRACE_LEVEL_3"/>
+									<listOptionValue builtIn="false" value="DEBUG_ASSERT_ON"/>
+									<listOptionValue builtIn="false" value="ADS"/>
+									<listOptionValue builtIn="false" value="ONLY_DSPC"/>
+									<listOptionValue builtIn="false" value="WAIT_FOR_SIM"/>
+									<listOptionValue builtIn="false" value="WAIT_FOR_CRCPE"/>
+									<listOptionValue builtIn="false" value="WAIT_FOR_HIF"/>
+									<listOptionValue builtIn="false" value="WAIT_FOR_CIF"/>
+									<listOptionValue builtIn="false" value="WAIT_FOR_DIA"/>
+									<listOptionValue builtIn="false" value="OS_MULTICORE=1"/>
+									<listOptionValue builtIn="false" value="SIMULATION"/>
+									<listOptionValue builtIn="false" value="_SC3900FP_COMP_"/>
+									<listOptionValue builtIn="false" value="BIG_ENDIAN_HOST"/>
+									<listOptionValue builtIn="false" value="DSP_BUILD"/>
+									<listOptionValue builtIn="false" value="SC39XX"/>
+									<listOptionValue builtIn="false" value="MMU_SUPPORT=1"/>
+									<listOptionValue builtIn="false" value="B4860"/>
+									<listOptionValue builtIn="false" value="B4860_REV2=1"/>
+									<listOptionValue builtIn="false" value="CPRI_ON_CORE4"/>
+									<listOptionValue builtIn="false" value="ACTIVE_CPRI_STUB"/>
+									<listOptionValue builtIn="false" value="EXE_LOG_CPRI_FFT"/>
+									<listOptionValue builtIn="false" value="FULL_DLMIMO"/>
+									<listOptionValue builtIn="false" value="MACRO"/>
+									<listOptionValue builtIn="false" value="_MANAGER_ASSERT_"/>
+									<listOptionValue builtIn="false" value="ALU_AL_CONFIG_MACRO"/>
+									<listOptionValue builtIn="false" value="memcpy=memcpy8_asm"/>
+									<listOptionValue builtIn="false" value="memset=memset8_fast_asm"/>
+									<listOptionValue builtIn="false" value="NOT_PUSCH_MT"/>
+									<listOptionValue builtIn="false" value="NOT_PUSCH_UT"/>
+									<listOptionValue builtIn="false" value="NOT_PUSCH_EDF_MT"/>
+									<listOptionValue builtIn="false" value="NOT_DL_AUTO_MT"/>
+									<listOptionValue builtIn="false" value="NOT_MEASURE_CYCLE"/>
+									<listOptionValue builtIn="false" value="PDSCH_EDF_IFFT_DIS"/>
+								</option>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.additionalOptions.shell.1446672433" name="To Shell" superClass="com.freescale.starcore3900.cdt.toolchain.scc.additionalOptions.shell" value="--keep -Xllt -c_mem0 -Xcfe -w=noextended -Xcfe -fl=no-fsalias_bytype" valueType="string"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.c.debug.scc.generateDebugInfo.1608702732" name="Generate Debugging Information" superClass="com.freescale.starcore3900.cdt.toolchain.c.debug.scc.generateDebugInfo" value="true" valueType="boolean"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.optimization.level.1835459859" name="Optimization Level" superClass="com.freescale.starcore3900.cdt.toolchain.scc.optimization.level" value="com.freescale.starcore3900.cdt.toolchain.scc.optimization.level.level3" valueType="enumerated"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.compiler.asmFile.358172735" name="Keep assembly (.sl) files" superClass="com.freescale.starcore3900.cdt.toolchain.scc.compiler.asmFile" value="false" valueType="boolean"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.compiler.keepErrorFile.1511002267" name="Create File with Error Output" superClass="com.freescale.starcore3900.cdt.toolchain.scc.compiler.keepErrorFile" value="false" valueType="boolean"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scc.compiler.mwfeWarningToError.955951869" name="Treat Warnings As Errors" superClass="com.freescale.starcore3900.cdt.toolchain.scc.compiler.mwfeWarningToError" value="com.freescale.starcore3900.cdt.toolchain.scc.compiler.mwfeWarningToErrorOn" valueType="enumerated"/>
+								<inputType id="com.freescale.starcore3900.cdt.toolchain.scc.cSource.1140566213" name="Starcore C Source File" superClass="com.freescale.starcore3900.cdt.toolchain.scc.cSource"/>
+								<inputType id="com.freescale.starcore3900.cdt.toolchain.scc.cxxSource.783332559" name="Starcore C++ Source File" superClass="com.freescale.starcore3900.cdt.toolchain.scc.cxxSource"/>
+								<inputType id="com.freescale.starcore3900.cdt.toolchain.scc.s1Source.1153238677" name="Starcore s1 Source File" superClass="com.freescale.starcore3900.cdt.toolchain.scc.s1Source"/>
+							</tool>
+							<tool command="scasm" commandLinePattern="&quot;${SCToolsInstallDir3900}${COMMAND}&quot; ${FLAGS} ${OUTPUT_FLAG}${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="" id="com.freescale.starcore3900.cdt.toolchain.base.scAsm.1725721070" name="StarCore 3900 Assembler" superClass="com.freescale.starcore3900.cdt.toolchain.base.scAsm">
+								<option id="com.freescale.starcore3900.cdt.toolchain.scAsm.generateDebugInfo.1181934568" name="Generate Debugging Information" superClass="com.freescale.starcore3900.cdt.toolchain.scAsm.generateDebugInfo" value="true" valueType="boolean"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scAsm.asmDefinedSyms.1987618684" name="Defined Symbols" superClass="com.freescale.starcore3900.cdt.toolchain.scAsm.asmDefinedSyms"/>
+								<option id="com.freescale.starcore3900.cdt.toolchain.scAsm.includePaths.1362823265" name="Include File Search Paths" superClass="com.freescale.starcore3900.cdt.toolchain.scAsm.includePaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/b4860/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/maple/rev3/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/drivers/cpri&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/b4860_family&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/starcore/core_family/sc39xx&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/maple/rev3&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/timers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/cpri&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/vsg&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/i2c&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/include/arch/peripherals/srio&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/common/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/maple&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/maple/maple_api/b4860/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/cpri/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/cpri/include/arch&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/b4860_family&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/b4860_family/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/core_family/sc39xx/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/maple/rev3/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/initialization/arch/peripherals/vsg/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/StarCore_Support/SmartDSP/source/common/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/fwk/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/B4860/fw_adp/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/cif/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/com/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/maple_eftpe/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dia/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/erm/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/exe/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/CM/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/BitScrambling/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/ConvEncoding/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/CRCgeneration/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/ModMapping/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/RateMatching/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/arch_SoC/SC/FSL_Lib/L1/SP/CM/Utilities/B4860&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/dl_itf&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/pdc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/dl/pbc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/itf/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/hif/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/maple/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/mea/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/algo&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/driver/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pra/src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/puc/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/pus/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/puc/tst&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/sim/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/tvpe/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ParentPrj}/code/tvpe/test&quot;"/>
+								</option>
+								<inputType id="com.freescale.starcore3900.cdt.toolchain.scAsm.source.533043001" name="StarCore Assembly Source File" superClass="com.freescale.starcore3900.cdt.toolchain.scAsm.source"/>
+							</tool>
+							<tool command="scc" commandLinePattern="&quot;${SCToolsInstallDir3900}${COMMAND}&quot; ${FLAGS} -c ${INPUTS}" errorParsers="" id="com.freescale.starcore3900.cdt.toolchain.base.scPreprocessor.1588676183" name="StarCore 3900 Preprocessor" superClass="com.freescale.starcore3900.cdt.toolchain.base.scPreprocessor"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="code/dspfwk/src/debug_trace|code/dspapp/pus/src/pusch_cfo_compensation_asm.c|code/FSL_Lib/L1/SP/SPManager/PUSCH_AL/src/b486x_shared_mem.c|code/FSL_Lib/L1/SP/SPManager/PUSCH_AL/src/b486x_init.c|code/FSL_Lib/L1/SP/SPManager/PUSCH_AL/src/b486x_config.c|code/dspapp/dl/src/data_task/pds/pds_task_main.c|code/dspapp/dl/src/data_task/pds/pds_task_init.c|code/dspapp/dl/src/data_task/pds/pds_cell_init.c|code/dspapp/maple/src/maple_init_C3.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPM_RBP.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPM_RBP_LUT.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_Repetition.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_PRBmapping.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_PRBmapping_LUTs.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_Modulation.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_Modulation_LUT.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_Modulation_LUT_15bit.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_DLRSgen.c|code/dspapp/dl/src/data_task/common/SBL1_PHDLSPK_BitScrambling.c|code/dspapp/dl/src/data_task/common/SBL1_DL_PDP_Init.c|code/dspapp/dl/src/data_task/common/PDP_Emulation.c|code/dspapp/dl/src/data_task/common/PDP_driver.c|code/dspapp/dl/src/data_task/common/ftpe_driver.c|code/dspapp/dl/src/data_task/common/dl_tm_test_samples.c|code/dspapp/dl/src/data_task/common/depe_driver.c|code/dspapp/dl/src/data_task/common/crcpe_driver.c|code/dspapp/dl/src/data_task/common/byte_unpack_asm_dcch.c|code/dspapp/dl/src/data_task/common/byte_pack_asm_dcch.c|code/dspapp/dl/src/data_task/common/API_2_parser.c|code/dspapp/dl/src/data_task/pdp|code/dspapp/dl/src/control_task|code/dspapp/dl/src/common|code/dspapp/dl/inc|code/dspapp/dl/algo|code/dspapp/pus/src/SBL1_TRULSPK_VectorReorder.c|code/dspapp/pus/src/SBL1_TRULSPK_RMDecoding.c|code/dspapp/pus/src/SBL1_TRULSPK_posmaxabs.c|code/dspapp/pus/src/SBL1_TRULSPK_FHT.c|code/dspapp/pus/src/SBL1_TRULSPK_FHT_asm.c|code/dspapp/pus/src/SBL1_TRULSPK_Bitmasking.c|code/dspapp/pus/src/SBL1_PHULSPM_CWP.c|code/dspapp/pus/src/SBL1_PHULSPM_CWP_LUT.c|code/dspapp/pus/src/pusch_uci_dtx_detection.c|code/dspapp/pus/src/pusch_tmmse_noise_exp_c.c|code/dspapp/pus/src/pusch_tmmse_noise_exp_asm.c|code/dspapp/pus/src/pusch_tmmse_gen_coefs_c.c|code/dspapp/pus/src/pusch_tmmse_gen_coefs_asm.c|code/dspapp/pus/src/pusch_mmse_equalizer_idft_normalizer.c|code/dspapp/pus/src/pusch_harq_weight_calc.c|code/dspapp/pus/src/pusch_group_hopping_pattern.c|code/dspapp/pus/src/pusch_ematching_size_calc.c|code/dspapp/pus/src/pusch_deinterleaver_tables.c|code/dspapp/pus/src/pusch_data_derepetition.c|code/dspapp/pus/src/pus_maple_pupe_main.c|code/dspapp/pus/src/pus_3900_maple_etvpe_main.c|code/dspapp/pus/src/pus_3900_maple_eqpe_main.c|code/dspapp/pus/src/pus_3900_maple_driver.c|code/dspapp/pus/src/mem_cpy_asm.c|code/dspapp/pus/src/CWP_step_select.c|code/dspapp/pus/src/CWP_scramb_gen.c|code/dspapp/pus/src/CWP_data_CQI.c|code/dspapp/pus/src/CWP_ACK_RI.c|code/dspapp/tvpe/src|code/dspapp/hif/src/hif_srio_init.c|code/archB4420" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="os_b4860_family;com.freescale.starcore3900.cdt.toolchain.config.lib.debug.234425869.2077715221" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="os_b4860_family_drivers;com.freescale.starcore3900.cdt.toolchain.config.lib.debug.234425869.1950905618" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+			</storageModule>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="LTE_LR_SoC.com.freescale.starcore3900.cdt.toolchain.project.c.235696995" name="StarCore 3900 C Project" projectType="com.freescale.starcore3900.cdt.toolchain.project.c"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.pathentry"/>
+	<storageModule moduleId="refreshScope" versionNumber="1">
+		<resource resourceType="PROJECT" workspacePath="/LTE_LR_SoC"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.freescale.starcore3900.cdt.toolchain.config.release.223513204;com.freescale.starcore3900.cdt.toolchain.config.release.223513204.;com.freescale.starcore3900.cdt.toolchain.c.release.scc.507847259;com.freescale.starcore3900.cdt.toolchain.scc.cxxSource.1609136881">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.freescale.starcore3900.cdt.toolchain.cpp.scScannerConfigProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249;com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249.;com.freescale.starcore3900.cdt.toolchain.c.debug.scc.2121070915;com.freescale.starcore3900.cdt.toolchain.scc.cSource.1832018245">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.freescale.starcore3900.cdt.toolchain.scScannerConfigProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249.1450548986;com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249.1450548986.;com.freescale.starcore3900.cdt.toolchain.c.debug.scc.118141425;com.freescale.starcore3900.cdt.toolchain.scc.s1Source.902799688">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.freescale.starcore3900.cdt.toolchain.scScannerConfigProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249.1450548986;com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249.1450548986.;com.freescale.starcore3900.cdt.toolchain.base.scAsm.2090048297;com.freescale.starcore3900.cdt.toolchain.scAsm.source.1646453631">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.freescale.starcore3900.cdt.toolchain.asm.scScannerConfigProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.freescale.starcore3900.cdt.toolchain.config.release.223513204;com.freescale.starcore3900.cdt.toolchain.config.release.223513204.;com.freescale.starcore3900.cdt.toolchain.c.release.scc.507847259;com.freescale.starcore3900.cdt.toolchain.scc.cSource.745174154">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.freescale.starcore3900.cdt.toolchain.scScannerConfigProfile"/>
+			<profile id="com.freescale.starcore3900.cdt.toolchain.scScannerConfigProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="false"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-def_print" command="${SCToolsInstallDir3900}/scc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="com.freescale.starcore3900.cdt.toolchain.cpp.scScannerConfigProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="false"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-def_print" command="${SCToolsInstallDir3900}/scc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249;com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249.;com.freescale.starcore3900.cdt.toolchain.c.debug.scc.2121070915;com.freescale.starcore3900.cdt.toolchain.scc.s1Source.1139785050">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.freescale.starcore3900.cdt.toolchain.scScannerConfigProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.freescale.starcore3900.cdt.toolchain.config.release.223513204;com.freescale.starcore3900.cdt.toolchain.config.release.223513204.;com.freescale.starcore3900.cdt.toolchain.c.release.scc.507847259;com.freescale.starcore3900.cdt.toolchain.scc.s1Source.400379129">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.freescale.starcore3900.cdt.toolchain.scScannerConfigProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249;com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249.;com.freescale.starcore3900.cdt.toolchain.base.scAsm.2060066804;com.freescale.starcore3900.cdt.toolchain.scAsm.source.503299121">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.freescale.starcore3900.cdt.toolchain.asm.scScannerConfigProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.freescale.starcore3900.cdt.toolchain.config.release.223513204;com.freescale.starcore3900.cdt.toolchain.config.release.223513204.;com.freescale.starcore3900.cdt.toolchain.base.scAsm.1937601912;com.freescale.starcore3900.cdt.toolchain.scAsm.source.1618894608">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.freescale.starcore3900.cdt.toolchain.asm.scScannerConfigProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249.1450548986;com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249.1450548986.;com.freescale.starcore3900.cdt.toolchain.c.debug.scc.118141425;com.freescale.starcore3900.cdt.toolchain.scc.cSource.726504546">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.freescale.starcore3900.cdt.toolchain.scScannerConfigProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249.1450548986;com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249.1450548986.;com.freescale.starcore3900.cdt.toolchain.c.debug.scc.118141425;com.freescale.starcore3900.cdt.toolchain.scc.cxxSource.16593353">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.freescale.starcore3900.cdt.toolchain.cpp.scScannerConfigProfile"/>
+			<profile id="com.freescale.starcore3900.cdt.toolchain.scScannerConfigProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="false"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-def_print" command="${SCToolsInstallDir3900}/scc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="com.freescale.starcore3900.cdt.toolchain.cpp.scScannerConfigProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="false"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-def_print" command="${SCToolsInstallDir3900}/scc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249;com.freescale.starcore3900.cdt.toolchain.config.debug.1904474249.;com.freescale.starcore3900.cdt.toolchain.c.debug.scc.2121070915;com.freescale.starcore3900.cdt.toolchain.scc.cxxSource.1908972427">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.freescale.starcore3900.cdt.toolchain.cpp.scScannerConfigProfile"/>
+			<profile id="com.freescale.starcore3900.cdt.toolchain.scScannerConfigProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="false"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-def_print" command="${SCToolsInstallDir3900}/scc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="com.freescale.starcore3900.cdt.toolchain.cpp.scScannerConfigProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="false"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-def_print" command="${SCToolsInstallDir3900}/scc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>
